@@ -1,0 +1,6 @@
+{
+  "command": "python -m pytest -q",
+  "passed": 87,
+  "failed": 0,
+  "scope": "Full repository pytest suite; mocked model calls do not establish live Qwen success"
+}

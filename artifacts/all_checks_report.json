@@ -1,0 +1,37 @@
+{
+  "mode": "offline",
+  "completed": true,
+  "passed": true,
+  "checks": [
+    {
+      "name": "Analyst fixture validation",
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "name": "Planner fixture validation",
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "name": "Developer fixture validation",
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "name": "Original navigation checks",
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "name": "Full pytest suite",
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "name": "Offline pipeline and four IR-SIM worlds",
+      "returncode": 0,
+      "passed": true
+    }
+  ]
+}

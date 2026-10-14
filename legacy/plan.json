@@ -1,0 +1,36 @@
+{
+  "strategy": "Prioritize moving forward when the target is ahead and the path is clear. If blocked, check left, then right. Stop if no safe directions are available.",
+  "decisions": [
+    {
+      "condition": "Goal is ahead and path ahead is clear",
+      "action": "FORWARD"
+    },
+    {
+      "condition": "Goal is ahead but path ahead is blocked",
+      "action": "LEFT"
+    },
+    {
+      "condition": "Goal is to the left and path left is clear",
+      "action": "LEFT"
+    },
+    {
+      "condition": "Goal is to the left but path left is blocked",
+      "action": "RIGHT"
+    },
+    {
+      "condition": "Goal is to the right and path right is clear",
+      "action": "RIGHT"
+    },
+    {
+      "condition": "Goal is to the right but path right is blocked",
+      "action": "FORWARD"
+    },
+    {
+      "condition": "No safe direction available",
+      "action": "STOP"
+    }
+  ],
+  "stop_conditions": [
+    "No safe direction available"
+  ]
+}

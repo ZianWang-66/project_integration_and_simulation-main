@@ -1,0 +1,108 @@
+2026-10-10 10:34:23,559 INFO Loaded brief.txt; mode=offline replay
+2026-10-10 10:34:23,560 INFO Saved requirements, plan, navigation code
+2026-10-10 10:34:23,560 INFO Analyst and Planner fixture replay finished; Developer fixture replay finished
+2026-10-10 10:34:23,560 INFO initial Test Agent started
+2026-10-10 10:34:24,050 INFO initial pytest returncode=0
+2026-10-10 10:34:24,051 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-10 10:34:24,052 INFO initial Reviewer created simulation_review.json
+2026-10-10 10:34:24,052 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-10 10:34:37,769 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 150, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.815877736477747, 1.35416409613743, -0.7200000000000006], 'history_length': 150, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-10 10:34:37,770 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-10 10:34:52,720 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 148, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.712490771958734, 4.253312110735628, -0.40000000000000036], 'history_length': 148, 'world': 'irsim_worlds/world_medium.yaml'}
+2026-10-10 10:34:52,721 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml
+2026-10-10 10:35:07,003 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 187, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.67814415627635, 8.127051090332003, 0.0], 'history_length': 187, 'world': 'irsim_worlds/world_difficult.yaml'}
+2026-10-10 10:35:07,003 INFO IR-SIM started world=irsim_worlds/world_custom.yaml
+2026-10-10 10:35:22,206 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 193, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.963211951972691, 4.376850671335502, -1.200000000000001], 'history_length': 193, 'world': 'irsim_worlds/world_custom.yaml'}
+2026-10-10 10:35:22,206 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-10 10:35:22,206 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-10 10:35:22,207 INFO Pipeline finished; passed=True
+2026-10-12 15:59:36,724 INFO Loaded brief.txt; mode=Qwen online
+2026-10-12 15:59:36,724 INFO Analyst Agent started
+2026-10-12 16:00:09,312 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 503 Service Unavailable"
+2026-10-12 16:00:09,312 WARNING Ollama status=503; retry 1/2
+2026-10-12 16:00:46,758 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 503 Service Unavailable"
+2026-10-12 16:00:46,758 WARNING Ollama status=503; retry 2/2
+2026-10-12 16:01:58,948 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 503 Service Unavailable"
+2026-10-12 16:01:58,948 ERROR Pipeline failed
+Traceback (most recent call last):
+  File "D:\SCSE\project_integration_and_simulation-main\main.py", line 78, in main
+    requirements = run_analyst(brief)
+  File "D:\SCSE\project_integration_and_simulation-main\analyst_agent.py", line 32, in run_analyst
+    response = client.chat(
+        model="qwen3:8b",
+    ...<4 lines>...
+    
+    )
+  File "D:\SCSE\project_integration_and_simulation-main\ollama_client.py", line 11, in chat
+    return super().chat(*args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python314\Lib\site-packages\ollama\_client.py", line 387, in chat
+    return self._request(
+           ~~~~~~~~~~~~~^
+      ChatResponse,
+      ^^^^^^^^^^^^^
+    ...<14 lines>...
+      stream=stream,
+      ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python314\Lib\site-packages\ollama\_client.py", line 199, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Lenovo\AppData\Local\Programs\Python\Python314\Lib\site-packages\ollama\_client.py", line 143, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError:  (status code: 503)
+2026-10-12 16:17:43,302 INFO Loaded brief.txt; mode=offline replay
+2026-10-12 16:17:43,303 INFO Saved requirements, plan, navigation code
+2026-10-12 16:17:43,303 INFO Analyst and Planner fixture replay finished; Developer fixture replay finished
+2026-10-12 16:17:43,303 INFO initial Test Agent started
+2026-10-12 16:17:43,740 INFO initial pytest returncode=0
+2026-10-12 16:17:43,741 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-12 16:17:43,741 INFO initial Reviewer created simulation_review.json
+2026-10-12 16:17:43,741 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-12 16:17:58,116 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 150, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.815877736477747, 1.35416409613743, -0.7200000000000006], 'history_length': 150, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-12 16:17:58,116 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-12 16:18:12,505 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 148, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.712490771958734, 4.253312110735628, -0.40000000000000036], 'history_length': 148, 'world': 'irsim_worlds/world_medium.yaml'}
+2026-10-12 16:18:12,505 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml
+2026-10-12 16:18:28,354 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 187, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.67814415627635, 8.127051090332003, 0.0], 'history_length': 187, 'world': 'irsim_worlds/world_difficult.yaml'}
+2026-10-12 16:18:28,354 INFO IR-SIM started world=irsim_worlds/world_custom.yaml
+2026-10-12 16:18:43,949 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 193, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.963211951972691, 4.376850671335502, -1.200000000000001], 'history_length': 193, 'world': 'irsim_worlds/world_custom.yaml'}
+2026-10-12 16:18:43,949 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-12 16:18:43,950 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-12 16:18:43,967 INFO Pipeline finished; passed=True
+2026-10-14 14:06:40,017 INFO Loaded brief.txt; mode=offline replay
+2026-10-14 14:06:40,018 INFO Saved requirements, plan, navigation code
+2026-10-14 14:06:40,018 INFO Analyst and Planner fixture replay finished; Developer fixture replay finished
+2026-10-14 14:06:40,018 INFO initial Test Agent started
+2026-10-14 14:06:40,384 INFO initial pytest returncode=0
+2026-10-14 14:06:40,385 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-14 14:06:40,385 INFO initial Reviewer created simulation_review.json
+2026-10-14 14:06:40,385 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-14 14:06:53,703 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 150, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.815877736477747, 1.35416409613743, -0.7200000000000006], 'history_length': 150, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-14 14:06:53,703 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-14 14:07:06,709 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 148, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.712490771958734, 4.253312110735628, -0.40000000000000036], 'history_length': 148, 'world': 'irsim_worlds/world_medium.yaml'}
+2026-10-14 14:07:06,709 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml
+2026-10-14 14:07:20,852 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 187, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.67814415627635, 8.127051090332003, 0.0], 'history_length': 187, 'world': 'irsim_worlds/world_difficult.yaml'}
+2026-10-14 14:07:20,852 INFO IR-SIM started world=irsim_worlds/world_custom.yaml
+2026-10-14 14:07:35,168 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 193, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.963211951972691, 4.376850671335502, -1.200000000000001], 'history_length': 193, 'world': 'irsim_worlds/world_custom.yaml'}
+2026-10-14 14:07:35,168 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-14 14:07:35,168 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-14 14:07:35,183 INFO Pipeline finished; passed=True
+2026-10-14 14:08:46,241 INFO Loaded brief.txt; mode=offline replay
+2026-10-14 14:08:46,242 INFO Saved requirements, plan, navigation code
+2026-10-14 14:08:46,242 INFO Analyst and Planner fixture replay finished; Developer fixture replay finished
+2026-10-14 14:08:46,242 INFO initial Test Agent started
+2026-10-14 14:08:46,587 INFO initial pytest returncode=0
+2026-10-14 14:08:46,588 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-14 14:08:46,588 INFO initial Reviewer created simulation_review.json
+2026-10-14 14:08:46,588 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-14 14:08:59,656 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 150, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.815877736477747, 1.35416409613743, -0.7200000000000006], 'history_length': 150, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-14 14:08:59,657 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-14 14:09:12,670 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 148, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.712490771958734, 4.253312110735628, -0.40000000000000036], 'history_length': 148, 'world': 'irsim_worlds/world_medium.yaml'}
+2026-10-14 14:09:12,671 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml
+2026-10-14 14:09:26,835 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 187, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.67814415627635, 8.127051090332003, 0.0], 'history_length': 187, 'world': 'irsim_worlds/world_difficult.yaml'}
+2026-10-14 14:09:26,835 INFO IR-SIM started world=irsim_worlds/world_custom.yaml
+2026-10-14 14:09:41,167 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 193, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.963211951972691, 4.376850671335502, -1.200000000000001], 'history_length': 193, 'world': 'irsim_worlds/world_custom.yaml'}
+2026-10-14 14:09:41,167 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-14 14:09:41,167 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-14 14:09:41,175 INFO Pipeline finished; passed=True
