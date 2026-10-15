@@ -1,5 +1,5 @@
 {
-  "strategy": "Prioritize moving forward when the target is ahead and the path is clear. If blocked, check left, then right. Stop if no safe directions are available.",
+  "strategy": "The robot will navigate towards the target location by prioritizing forward movement while avoiding obstacles. If the forward path is blocked, it will check left and right directions in order, and stop if no safe path is available.",
   "decisions": [
     {
       "condition": "Goal is ahead and path ahead is clear",
@@ -31,6 +31,7 @@
     }
   ],
   "stop_conditions": [
-    "No safe direction available"
+    "No safe direction available",
+    "Robot is at the target location"
   ]
 }

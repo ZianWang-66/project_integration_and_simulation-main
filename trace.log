@@ -106,3 +106,1153 @@ ollama._types.ResponseError:  (status code: 503)
 2026-10-14 14:09:41,167 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
 2026-10-14 14:09:41,167 INFO initial Benchmark Reviewer created benchmark_review.json
 2026-10-14 14:09:41,175 INFO Pipeline finished; passed=True
+2026-10-14 22:40:37,990 INFO Loaded brief.txt; mode=Qwen online
+2026-10-14 22:40:37,990 INFO Loaded brief.txt; mode=Qwen online
+2026-10-14 22:40:37,990 INFO Analyst Agent started
+2026-10-14 22:40:37,990 INFO Analyst Agent started
+2026-10-14 22:40:45,634 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:40:45,634 INFO Analyst Agent finished
+2026-10-14 22:40:45,635 INFO Planner Agent started
+2026-10-14 22:40:46,700 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:40:46,700 INFO Analyst Agent finished
+2026-10-14 22:40:46,700 INFO Planner Agent started
+2026-10-14 22:40:51,830 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:40:51,831 INFO Planner Agent finished
+2026-10-14 22:40:51,831 INFO Developer Agent started
+2026-10-14 22:40:57,257 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:40:57,257 INFO Planner Agent finished
+2026-10-14 22:40:57,257 INFO Developer Agent started
+2026-10-14 22:41:00,605 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:41:00,605 INFO Developer Agent finished
+2026-10-14 22:41:00,606 INFO Saved requirements, plan, navigation code
+2026-10-14 22:41:00,606 INFO initial Test Agent started
+2026-10-14 22:41:03,849 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:41:03,850 INFO Developer Agent finished
+2026-10-14 22:41:03,851 INFO Saved requirements, plan, navigation code
+2026-10-14 22:41:03,851 INFO initial Test Agent started
+2026-10-14 22:41:38,433 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:41:38,774 INFO initial pytest returncode=1
+2026-10-14 22:41:38,775 INFO initial Simulation created simulation_report.json: 50/64 passed
+2026-10-14 22:42:11,108 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:42:11,451 INFO initial pytest returncode=1
+2026-10-14 22:42:11,452 INFO initial Simulation created simulation_report.json: 50/64 passed
+2026-10-14 22:42:17,583 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:42:17,584 INFO initial Reviewer created simulation_review.json
+2026-10-14 22:42:17,584 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-14 22:42:22,244 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:42:22,244 INFO initial Reviewer created simulation_review.json
+2026-10-14 22:42:22,245 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-14 22:42:29,367 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 38, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [2.4508701699282156, 1.5021657629265837, 0.4800000000000004], 'history_length': 38, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-14 22:42:29,367 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-14 22:42:32,080 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 38, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [2.4508701699282156, 1.5021657629265837, 0.4800000000000004], 'history_length': 38, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-14 22:42:32,080 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-14 22:42:42,680 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 148, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.712490771958734, 4.253312110735628, -0.40000000000000036], 'history_length': 148, 'world': 'irsim_worlds/world_medium.yaml'}
+2026-10-14 22:42:42,680 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml
+2026-10-14 22:42:45,304 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 148, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.712490771958734, 4.253312110735628, -0.40000000000000036], 'history_length': 148, 'world': 'irsim_worlds/world_medium.yaml'}
+2026-10-14 22:42:45,304 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml
+2026-10-14 22:42:57,220 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 187, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.67814415627635, 8.127051090332003, 0.0], 'history_length': 187, 'world': 'irsim_worlds/world_difficult.yaml'}
+2026-10-14 22:42:57,220 INFO IR-SIM started world=irsim_worlds/world_custom.yaml
+2026-10-14 22:42:59,713 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 187, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.67814415627635, 8.127051090332003, 0.0], 'history_length': 187, 'world': 'irsim_worlds/world_difficult.yaml'}
+2026-10-14 22:42:59,713 INFO IR-SIM started world=irsim_worlds/world_custom.yaml
+2026-10-14 22:43:09,124 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 104, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [5.427829304971813, 4.312531566075123, 0.4800000000000004], 'history_length': 104, 'world': 'irsim_worlds/world_custom.yaml'}
+2026-10-14 22:43:09,125 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-14 22:43:11,606 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 104, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [5.427829304971813, 4.312531566075123, 0.4800000000000004], 'history_length': 104, 'world': 'irsim_worlds/world_custom.yaml'}
+2026-10-14 22:43:11,607 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-14 22:43:12,754 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:43:12,754 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-14 22:43:15,843 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:43:15,844 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-14 22:43:20,574 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:43:20,575 INFO Developer revision saved navigation_logic_revised.py
+2026-10-14 22:43:20,575 INFO revision_1 Test Agent started
+2026-10-14 22:43:25,020 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:43:25,021 INFO Developer revision saved navigation_logic_revised.py
+2026-10-14 22:43:25,021 INFO revision_1 Test Agent started
+2026-10-14 22:44:01,393 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:44:01,745 INFO revision_1 pytest returncode=1
+2026-10-14 22:44:01,746 INFO revision_1 Simulation created simulation_report.json: 50/64 passed
+2026-10-14 22:44:35,550 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:44:35,922 INFO revision_1 pytest returncode=1
+2026-10-14 22:44:35,923 INFO revision_1 Simulation created simulation_report.json: 50/64 passed
+2026-10-14 22:44:43,727 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:44:43,727 INFO revision_1 Reviewer created simulation_review.json
+2026-10-14 22:44:43,728 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-14 22:44:48,907 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:44:48,908 INFO revision_1 Reviewer created simulation_review.json
+2026-10-14 22:44:48,908 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-14 22:44:53,705 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 38, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [2.4508701699282156, 1.5021657629265837, 0.4800000000000004], 'history_length': 38, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-14 22:44:53,705 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-14 22:44:58,810 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 38, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [2.4508701699282156, 1.5021657629265837, 0.4800000000000004], 'history_length': 38, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-14 22:44:58,810 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-14 22:45:06,911 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 148, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.712490771958734, 4.253312110735628, -0.40000000000000036], 'history_length': 148, 'world': 'irsim_worlds/world_medium.yaml'}
+2026-10-14 22:45:06,911 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml
+2026-10-14 22:45:12,107 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 148, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.712490771958734, 4.253312110735628, -0.40000000000000036], 'history_length': 148, 'world': 'irsim_worlds/world_medium.yaml'}
+2026-10-14 22:45:12,107 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml
+2026-10-14 22:45:21,291 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 187, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.67814415627635, 8.127051090332003, 0.0], 'history_length': 187, 'world': 'irsim_worlds/world_difficult.yaml'}
+2026-10-14 22:45:21,291 INFO IR-SIM started world=irsim_worlds/world_custom.yaml
+2026-10-14 22:45:27,701 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 187, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.67814415627635, 8.127051090332003, 0.0], 'history_length': 187, 'world': 'irsim_worlds/world_difficult.yaml'}
+2026-10-14 22:45:27,701 INFO IR-SIM started world=irsim_worlds/world_custom.yaml
+2026-10-14 22:45:33,204 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 104, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [5.427829304971813, 4.312531566075123, 0.4800000000000004], 'history_length': 104, 'world': 'irsim_worlds/world_custom.yaml'}
+2026-10-14 22:45:33,204 INFO revision_1 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-14 22:45:36,849 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:45:36,850 INFO revision_1 Benchmark Reviewer created benchmark_review.json
+2026-10-14 22:45:36,862 INFO Pipeline finished; passed=False
+2026-10-14 22:45:39,542 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 104, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [5.427829304971813, 4.312531566075123, 0.4800000000000004], 'history_length': 104, 'world': 'irsim_worlds/world_custom.yaml'}
+2026-10-14 22:45:39,542 INFO revision_1 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-14 22:45:42,713 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:45:42,714 INFO revision_1 Benchmark Reviewer created benchmark_review.json
+2026-10-14 22:45:42,716 INFO Pipeline finished; passed=False
+2026-10-14 22:46:05,348 INFO Loaded brief.txt; mode=Qwen online
+2026-10-14 22:46:05,348 INFO Analyst Agent started
+2026-10-14 22:46:06,493 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:46:06,494 INFO Analyst Agent finished
+2026-10-14 22:46:06,494 INFO Planner Agent started
+2026-10-14 22:46:11,856 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:46:11,856 INFO Planner Agent finished
+2026-10-14 22:46:11,856 INFO Developer Agent started
+2026-10-14 22:46:15,050 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:46:15,050 INFO Developer Agent finished
+2026-10-14 22:46:15,051 INFO Saved requirements, plan, navigation code
+2026-10-14 22:46:15,051 INFO initial Test Agent started
+2026-10-14 22:47:11,676 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:47:12,011 INFO initial pytest returncode=1
+2026-10-14 22:47:12,012 INFO initial Simulation created simulation_report.json: 49/64 passed
+2026-10-14 22:47:15,542 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:47:15,543 INFO initial Reviewer created simulation_review.json
+2026-10-14 22:47:15,543 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-14 22:47:30,332 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 195, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.8326102303645735, 1.3608488334800455, -0.7200000000000006], 'history_length': 195, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-14 22:47:30,332 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-14 22:47:45,027 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 195, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.711538179704872, 4.27531810911382, -0.4800000000000004], 'history_length': 195, 'world': 'irsim_worlds/world_medium.yaml'}
+2026-10-14 22:47:45,027 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml
+2026-10-14 22:47:59,886 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 206, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'acceptable_but_inefficient', 'efficiency_passed': False, 'final_pose': [7.643580787692912, 8.124114868432471, 0.0], 'history_length': 206, 'world': 'irsim_worlds/world_difficult.yaml'}
+2026-10-14 22:47:59,887 INFO IR-SIM started world=irsim_worlds/world_custom.yaml
+2026-10-14 22:48:17,282 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 284, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'acceptable_but_inefficient', 'efficiency_passed': False, 'final_pose': [8.031208430434997, 4.371701606233933, -1.2800000000000011], 'history_length': 284, 'world': 'irsim_worlds/world_custom.yaml'}
+2026-10-14 22:48:17,282 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-14 22:48:20,697 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:48:20,698 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-14 22:48:26,868 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:48:26,869 INFO Developer revision saved navigation_logic_revised.py
+2026-10-14 22:48:26,869 INFO revision_1 Test Agent started
+2026-10-14 22:49:06,514 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:49:06,815 INFO revision_1 pytest returncode=1
+2026-10-14 22:49:06,815 INFO revision_1 Simulation created simulation_report.json: 60/64 passed
+2026-10-14 22:49:10,869 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:49:10,870 INFO revision_1 Reviewer created simulation_review.json
+2026-10-14 22:49:10,870 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-14 22:49:25,345 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 195, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.8326102303645735, 1.3608488334800455, -0.7200000000000006], 'history_length': 195, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-14 22:49:25,345 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-14 22:49:39,796 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 195, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.711538179704872, 4.27531810911382, -0.4800000000000004], 'history_length': 195, 'world': 'irsim_worlds/world_medium.yaml'}
+2026-10-14 22:49:39,796 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml
+2026-10-14 22:49:54,535 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 206, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'acceptable_but_inefficient', 'efficiency_passed': False, 'final_pose': [7.643580787692912, 8.124114868432471, 0.0], 'history_length': 206, 'world': 'irsim_worlds/world_difficult.yaml'}
+2026-10-14 22:49:54,535 INFO IR-SIM started world=irsim_worlds/world_custom.yaml
+2026-10-14 22:50:01,510 ERROR Pipeline failed
+Traceback (most recent call last):
+  File "d:\SCSE\project_integration_and_simulation-main\main.py", line 104, in main
+    review, benchmark, benchmark_review, test_status = evaluate(requirements, plan, code, False, f"revision_{number + 1}")
+                                                       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\SCSE\project_integration_and_simulation-main\main.py", line 41, in evaluate
+    benchmark = run_all_benchmarks()
+  File "d:\SCSE\project_integration_and_simulation-main\benchmark_irsim.py", line 37, in run_all_benchmarks
+    results = [run_benchmark(world) for world in WORLDS]
+               ~~~~~~~~~~~~~^^^^^^^
+  File "d:\SCSE\project_integration_and_simulation-main\benchmark_irsim.py", line 25, in run_benchmark
+    raise RuntimeError(f"IR-SIM failed in {world_file}; see artifacts/{name}.log")
+RuntimeError: IR-SIM failed in irsim_worlds/world_custom.yaml; see artifacts/world_custom.log
+2026-10-14 22:50:36,101 INFO Loaded brief.txt; mode=Qwen online
+2026-10-14 22:50:36,102 INFO Analyst Agent started
+2026-10-14 22:50:37,384 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:50:37,384 INFO Analyst Agent finished
+2026-10-14 22:50:37,384 INFO Planner Agent started
+2026-10-14 22:50:42,505 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:50:42,506 INFO Planner Agent finished
+2026-10-14 22:50:42,506 INFO Developer Agent started
+2026-10-14 22:50:45,780 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:50:45,781 INFO Developer Agent finished
+2026-10-14 22:50:45,782 INFO Saved requirements, plan, navigation code
+2026-10-14 22:50:45,782 INFO initial Test Agent started
+2026-10-14 22:51:26,956 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:51:27,238 INFO initial pytest returncode=0
+2026-10-14 22:51:27,239 INFO initial Simulation created simulation_report.json: 50/64 passed
+2026-10-14 22:51:31,790 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:51:31,790 INFO initial Reviewer created simulation_review.json
+2026-10-14 22:51:31,790 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-14 22:51:41,615 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 38, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [2.4508701699282156, 1.5021657629265837, 0.4800000000000004], 'history_length': 38, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-14 22:51:41,615 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-14 22:51:54,655 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 148, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.712490771958734, 4.253312110735628, -0.40000000000000036], 'history_length': 148, 'world': 'irsim_worlds/world_medium.yaml'}
+2026-10-14 22:51:54,655 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml
+2026-10-14 22:52:08,846 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 187, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.67814415627635, 8.127051090332003, 0.0], 'history_length': 187, 'world': 'irsim_worlds/world_difficult.yaml'}
+2026-10-14 22:52:08,846 INFO IR-SIM started world=irsim_worlds/world_custom.yaml
+2026-10-14 22:52:20,618 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 104, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [5.427829304971813, 4.312531566075123, 0.4800000000000004], 'history_length': 104, 'world': 'irsim_worlds/world_custom.yaml'}
+2026-10-14 22:52:20,618 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-14 22:52:23,841 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:52:23,842 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-14 22:52:27,610 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:52:27,611 INFO Developer revision saved navigation_logic_revised.py
+2026-10-14 22:52:27,611 INFO revision_1 Test Agent started
+2026-10-14 22:53:00,237 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:53:00,559 INFO revision_1 pytest returncode=1
+2026-10-14 22:53:00,560 INFO revision_1 Simulation created simulation_report.json: 50/64 passed
+2026-10-14 22:53:03,961 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:53:03,962 INFO revision_1 Reviewer created simulation_review.json
+2026-10-14 22:53:03,962 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-14 22:53:13,860 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 38, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [2.4508701699282156, 1.5021657629265837, 0.4800000000000004], 'history_length': 38, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-14 22:53:13,860 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-14 22:53:27,078 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 148, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.712490771958734, 4.253312110735628, -0.40000000000000036], 'history_length': 148, 'world': 'irsim_worlds/world_medium.yaml'}
+2026-10-14 22:53:27,078 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml
+2026-10-14 22:53:41,558 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 187, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.67814415627635, 8.127051090332003, 0.0], 'history_length': 187, 'world': 'irsim_worlds/world_difficult.yaml'}
+2026-10-14 22:53:41,559 INFO IR-SIM started world=irsim_worlds/world_custom.yaml
+2026-10-14 22:53:53,451 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 104, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [5.427829304971813, 4.312531566075123, 0.4800000000000004], 'history_length': 104, 'world': 'irsim_worlds/world_custom.yaml'}
+2026-10-14 22:53:53,451 INFO revision_1 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-14 22:53:56,742 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:53:56,743 INFO revision_1 Benchmark Reviewer created benchmark_review.json
+2026-10-14 22:53:56,754 INFO Pipeline finished; passed=False
+2026-10-14 22:54:46,019 INFO Loaded brief.txt; mode=Qwen online
+2026-10-14 22:54:46,020 INFO Analyst Agent started
+2026-10-14 22:54:47,168 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:54:47,168 INFO Analyst Agent finished
+2026-10-14 22:54:47,168 INFO Planner Agent started
+2026-10-14 22:54:52,239 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:54:52,240 INFO Planner Agent finished
+2026-10-14 22:54:52,240 INFO Developer Agent started
+2026-10-14 22:54:55,543 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:54:55,543 INFO Developer Agent finished
+2026-10-14 22:54:55,544 INFO Saved requirements, plan, navigation code
+2026-10-14 22:54:55,544 INFO initial Test Agent started
+2026-10-14 22:57:02,439 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:57:02,440 WARNING Test Agent invalid code attempt 1/3
+2026-10-14 22:57:18,974 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:57:19,289 INFO initial pytest returncode=0
+2026-10-14 22:57:19,289 INFO initial Simulation created simulation_report.json: 50/64 passed
+2026-10-14 22:57:23,999 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:57:24,000 INFO initial Reviewer created simulation_review.json
+2026-10-14 22:57:24,000 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-14 22:57:33,846 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 38, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [2.4508701699282156, 1.5021657629265837, 0.4800000000000004], 'history_length': 38, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-14 22:57:33,846 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-14 22:57:46,788 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 148, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.712490771958734, 4.253312110735628, -0.40000000000000036], 'history_length': 148, 'world': 'irsim_worlds/world_medium.yaml'}
+2026-10-14 22:57:46,788 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml
+2026-10-14 22:58:00,823 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 187, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.67814415627635, 8.127051090332003, 0.0], 'history_length': 187, 'world': 'irsim_worlds/world_difficult.yaml'}
+2026-10-14 22:58:00,823 INFO IR-SIM started world=irsim_worlds/world_custom.yaml
+2026-10-14 22:58:12,505 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 104, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [5.427829304971813, 4.312531566075123, 0.4800000000000004], 'history_length': 104, 'world': 'irsim_worlds/world_custom.yaml'}
+2026-10-14 22:58:12,506 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-14 22:58:15,731 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:58:15,732 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-14 22:58:19,995 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:58:19,996 INFO Developer revision saved navigation_logic_revised.py
+2026-10-14 22:58:19,996 INFO revision_1 Test Agent started
+2026-10-14 22:59:00,607 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:59:00,918 INFO revision_1 pytest returncode=1
+2026-10-14 22:59:00,919 INFO revision_1 Simulation created simulation_report.json: 50/64 passed
+2026-10-14 22:59:04,948 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:59:04,948 INFO revision_1 Reviewer created simulation_review.json
+2026-10-14 22:59:04,948 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-14 22:59:14,788 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 38, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [2.4508701699282156, 1.5021657629265837, 0.4800000000000004], 'history_length': 38, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-14 22:59:14,788 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-14 22:59:27,758 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 148, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.712490771958734, 4.253312110735628, -0.40000000000000036], 'history_length': 148, 'world': 'irsim_worlds/world_medium.yaml'}
+2026-10-14 22:59:27,758 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml
+2026-10-14 22:59:41,805 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 187, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.67814415627635, 8.127051090332003, 0.0], 'history_length': 187, 'world': 'irsim_worlds/world_difficult.yaml'}
+2026-10-14 22:59:41,805 INFO IR-SIM started world=irsim_worlds/world_custom.yaml
+2026-10-14 22:59:53,480 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 104, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [5.427829304971813, 4.312531566075123, 0.4800000000000004], 'history_length': 104, 'world': 'irsim_worlds/world_custom.yaml'}
+2026-10-14 22:59:53,480 INFO revision_1 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-14 22:59:56,703 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 22:59:56,704 INFO revision_1 Benchmark Reviewer created benchmark_review.json
+2026-10-14 22:59:56,715 INFO Pipeline finished; passed=False
+2026-10-14 23:00:09,809 INFO Loaded brief.txt; mode=Qwen online
+2026-10-14 23:00:09,809 INFO Analyst Agent started
+2026-10-14 23:00:10,918 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 23:00:10,918 INFO Analyst Agent finished
+2026-10-14 23:00:10,918 INFO Planner Agent started
+2026-10-14 23:00:16,561 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 23:00:16,561 INFO Planner Agent finished
+2026-10-14 23:00:16,561 INFO Developer Agent started
+2026-10-14 23:00:19,778 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-14 23:00:19,778 INFO Developer Agent finished
+2026-10-14 23:00:19,779 INFO Saved requirements, plan, navigation code
+2026-10-14 23:00:19,779 INFO initial Test Agent started
+2026-10-15 11:33:19,493 INFO Loaded brief.txt; mode=Qwen online
+2026-10-15 11:33:19,493 INFO Analyst Agent started
+2026-10-15 11:33:27,268 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:33:27,268 INFO Analyst Agent finished
+2026-10-15 11:33:27,268 INFO Planner Agent started
+2026-10-15 11:33:33,093 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:33:33,093 INFO Planner Agent finished
+2026-10-15 11:33:33,093 INFO Developer Agent started
+2026-10-15 11:33:36,436 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:33:36,437 INFO Developer Agent finished
+2026-10-15 11:33:36,437 INFO Saved requirements, plan, navigation code
+2026-10-15 11:33:36,437 INFO initial Test Agent started
+2026-10-15 11:33:51,256 INFO Loaded brief.txt; mode=Qwen online
+2026-10-15 11:33:51,256 INFO Analyst Agent started
+2026-10-15 11:33:52,330 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:33:52,330 INFO Analyst Agent finished
+2026-10-15 11:33:52,330 INFO Planner Agent started
+2026-10-15 11:33:57,410 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:33:57,411 INFO Planner Agent finished
+2026-10-15 11:33:57,411 INFO Developer Agent started
+2026-10-15 11:34:00,562 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:34:00,563 INFO Developer Agent finished
+2026-10-15 11:34:00,563 INFO Saved requirements, plan, navigation code
+2026-10-15 11:34:00,563 INFO initial Test Agent started
+2026-10-15 11:34:13,514 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:34:13,853 INFO initial pytest returncode=1
+2026-10-15 11:34:13,853 INFO initial Simulation created simulation_report.json: 50/64 passed
+2026-10-15 11:34:18,951 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:34:18,952 INFO initial Reviewer created simulation_review.json
+2026-10-15 11:34:18,952 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-15 11:34:30,238 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 38, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [2.4508701699282156, 1.5021657629265837, 0.4800000000000004], 'history_length': 38, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-15 11:34:30,238 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-15 11:34:43,270 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 148, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.712490771958734, 4.253312110735628, -0.40000000000000036], 'history_length': 148, 'world': 'irsim_worlds/world_medium.yaml'}
+2026-10-15 11:34:43,270 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml
+2026-10-15 11:34:58,098 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'reached_goal': True, 'collision_or_done': False, 'steps_taken': 187, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'final_pose': [7.67814415627635, 8.127051090332003, 0.0], 'history_length': 187, 'world': 'irsim_worlds/world_difficult.yaml'}
+2026-10-15 11:34:58,098 INFO IR-SIM started world=irsim_worlds/world_custom.yaml
+2026-10-15 11:35:09,769 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 104, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [5.427829304971813, 4.312531566075123, 0.4800000000000004], 'history_length': 104, 'world': 'irsim_worlds/world_custom.yaml'}
+2026-10-15 11:35:09,770 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 11:35:13,378 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:35:13,378 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 11:35:17,256 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:35:17,256 INFO Developer revision saved navigation_logic_revised.py
+2026-10-15 11:35:17,258 INFO revision_1 Test Agent started
+2026-10-15 11:35:30,022 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:35:30,331 INFO revision_1 pytest returncode=0
+2026-10-15 11:35:30,332 INFO revision_1 Simulation created simulation_report.json: 50/64 passed
+2026-10-15 11:35:35,743 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:35:35,743 INFO revision_1 Reviewer created simulation_review.json
+2026-10-15 11:35:35,743 INFO IR-SIM started world=irsim_worlds/world_easy.yaml
+2026-10-15 11:35:45,698 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'reached_goal': False, 'collision_or_done': True, 'steps_taken': 38, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'final_pose': [2.4508701699282156, 1.5021657629265837, 0.4800000000000004], 'history_length': 38, 'world': 'irsim_worlds/world_easy.yaml'}
+2026-10-15 11:35:45,699 INFO IR-SIM started world=irsim_worlds/world_medium.yaml
+2026-10-15 11:35:46,169 ERROR Pipeline failed
+Traceback (most recent call last):
+  File "D:\SCSE\project_integration_and_simulation-main\main.py", line 104, in main
+    review, benchmark, benchmark_review, test_status = evaluate(requirements, plan, code, False, f"revision_{number + 1}")
+                                                       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\SCSE\project_integration_and_simulation-main\main.py", line 41, in evaluate
+    benchmark = run_all_benchmarks()
+  File "D:\SCSE\project_integration_and_simulation-main\benchmark_irsim.py", line 37, in run_all_benchmarks
+    results = [run_benchmark(world) for world in WORLDS]
+               ~~~~~~~~~~~~~^^^^^^^
+  File "D:\SCSE\project_integration_and_simulation-main\benchmark_irsim.py", line 25, in run_benchmark
+    raise RuntimeError(f"IR-SIM failed in {world_file}; see artifacts/{name}.log")
+RuntimeError: IR-SIM failed in irsim_worlds/world_medium.yaml; see artifacts/world_medium.log
+2026-10-15 11:48:51,190 INFO Loaded brief.txt; mode=offline replay
+2026-10-15 11:48:51,190 INFO Saved requirements, plan, navigation code
+2026-10-15 11:48:51,190 INFO Analyst and Planner fixture replay finished; Developer fixture replay finished
+2026-10-15 11:48:51,191 INFO initial Test Agent started
+2026-10-15 11:48:51,597 INFO initial pytest returncode=0
+2026-10-15 11:48:51,598 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-15 11:48:51,598 INFO initial Reviewer created simulation_review.json
+2026-10-15 11:48:51,599 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 11:48:52,308 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 11:48:52,309 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 11:48:53,027 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 11:48:53,027 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 11:48:53,742 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 11:48:53,742 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 11:48:54,429 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 11:48:54,429 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 11:48:54,429 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 11:48:54,446 INFO Pipeline finished; passed=True
+2026-10-15 11:49:39,392 INFO Loaded brief.txt; mode=offline replay
+2026-10-15 11:49:39,393 INFO Saved requirements, plan, navigation code
+2026-10-15 11:49:39,393 INFO Analyst and Planner fixture replay finished; Developer fixture replay finished
+2026-10-15 11:49:39,393 INFO initial Test Agent started
+2026-10-15 11:49:39,773 INFO initial pytest returncode=0
+2026-10-15 11:49:39,774 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-15 11:49:39,774 INFO initial Reviewer created simulation_review.json
+2026-10-15 11:49:39,774 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 11:49:40,508 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 11:49:40,508 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 11:49:41,191 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 11:49:41,192 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 11:49:41,893 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 11:49:41,893 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 11:49:42,607 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 11:49:42,608 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 11:49:42,608 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 11:49:42,615 INFO Pipeline finished; passed=True
+2026-10-15 11:50:08,952 INFO Loaded brief.txt; mode=Qwen online
+2026-10-15 11:50:08,952 INFO Analyst Agent started
+2026-10-15 11:50:12,192 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:50:12,192 INFO Analyst Agent finished
+2026-10-15 11:50:12,192 INFO Planner Agent started
+2026-10-15 11:50:17,455 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:50:17,455 INFO Planner Agent finished
+2026-10-15 11:50:17,455 INFO Developer Agent started
+2026-10-15 11:50:20,818 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:50:20,818 INFO Developer Agent finished
+2026-10-15 11:50:20,819 INFO Saved requirements, plan, navigation code
+2026-10-15 11:50:20,819 INFO initial Test Agent started
+2026-10-15 11:50:52,632 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:50:53,070 INFO initial pytest returncode=1
+2026-10-15 11:50:53,071 INFO initial Simulation created simulation_report.json: 50/64 passed
+2026-10-15 11:50:59,026 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:50:59,027 INFO initial Reviewer created simulation_review.json
+2026-10-15 11:50:59,027 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 11:50:59,718 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 5, 'escape_maneuvers': 0, 'min_clearance': 0.274, 'path_length': 7.9, 'steps_taken': 107, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.918740932701601, 1.379427072615717, -0.9000000000000012], 'history_length': 107, 'attempts': 1}
+2026-10-15 11:50:59,718 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 11:51:00,430 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 11:51:00,430 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 11:51:01,137 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 11:51:01,137 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 11:51:01,852 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 8, 'escape_maneuvers': 0, 'min_clearance': 0.265, 'path_length': 9.9, 'steps_taken': 142, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.047659024011846, 4.317868033950931, -1.2000000000000015], 'history_length': 142, 'attempts': 1}
+2026-10-15 11:51:01,853 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 11:51:03,923 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:51:03,924 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 11:51:10,820 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:51:10,821 INFO Developer revision saved navigation_logic_revised.py
+2026-10-15 11:51:10,821 INFO revision_1 Test Agent started
+2026-10-15 11:51:38,043 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:51:38,519 INFO revision_1 pytest returncode=1
+2026-10-15 11:51:38,520 INFO revision_1 Simulation created simulation_report.json: 64/64 passed
+2026-10-15 11:51:43,386 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:51:43,386 INFO revision_1 Reviewer created simulation_review.json
+2026-10-15 11:51:43,387 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 11:51:44,080 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 11:51:44,080 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 11:51:44,797 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 11:51:44,797 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 11:51:45,484 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 11:51:45,484 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 11:51:46,194 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 11:51:46,194 INFO revision_1 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 11:51:49,733 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:51:49,733 INFO revision_1 Benchmark Reviewer created benchmark_review.json
+2026-10-15 11:51:56,715 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:51:56,716 INFO Developer revision saved navigation_logic_revised.py
+2026-10-15 11:51:56,716 INFO revision_2 Test Agent started
+2026-10-15 11:53:03,218 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:53:03,718 INFO revision_2 pytest returncode=1
+2026-10-15 11:53:03,719 INFO revision_2 Simulation created simulation_report.json: 64/64 passed
+2026-10-15 11:53:06,111 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:53:06,111 INFO revision_2 Reviewer created simulation_review.json
+2026-10-15 11:53:06,112 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 11:53:06,834 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 11:53:06,834 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 11:53:07,570 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 11:53:07,571 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 11:53:08,300 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 11:53:08,300 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 11:53:09,048 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 11:53:09,048 INFO revision_2 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 11:53:10,654 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:53:10,654 INFO revision_2 Benchmark Reviewer created benchmark_review.json
+2026-10-15 11:53:18,003 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:53:18,004 INFO Developer revision saved navigation_logic_revised.py
+2026-10-15 11:53:18,004 INFO revision_3 Test Agent started
+2026-10-15 11:53:47,179 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:53:47,608 INFO revision_3 pytest returncode=1
+2026-10-15 11:53:47,608 INFO revision_3 Simulation created simulation_report.json: 64/64 passed
+2026-10-15 11:53:53,237 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:53:53,238 INFO revision_3 Reviewer created simulation_review.json
+2026-10-15 11:53:53,238 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 11:53:53,922 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 11:53:53,922 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 11:53:54,634 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 11:53:54,634 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 11:53:55,322 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 11:53:55,322 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 11:53:56,039 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 11:53:56,039 INFO revision_3 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 11:53:57,641 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 11:53:57,641 INFO revision_3 Benchmark Reviewer created benchmark_review.json
+2026-10-15 11:53:57,653 INFO Pipeline finished; passed=False
+2026-10-15 12:04:17,124 INFO Loaded brief.txt; mode=offline replay
+2026-10-15 12:04:17,125 INFO Saved requirements, plan, navigation code
+2026-10-15 12:04:17,125 INFO Analyst and Planner fixture replay finished; Developer fixture replay finished
+2026-10-15 12:04:17,125 INFO initial Test Agent started
+2026-10-15 12:04:17,545 INFO initial pytest returncode=0
+2026-10-15 12:04:17,546 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-15 12:04:17,546 INFO initial Reviewer created simulation_review.json
+2026-10-15 12:04:17,546 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:04:18,253 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:04:18,254 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:04:19,002 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:04:19,002 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:04:19,793 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:04:19,793 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:04:20,643 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:04:20,644 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:04:20,644 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:04:20,651 INFO Pipeline finished; passed=True
+2026-10-15 12:04:44,478 INFO Loaded brief.txt; mode=Qwen online
+2026-10-15 12:04:44,478 INFO Analyst Agent started
+2026-10-15 12:04:47,993 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:04:47,993 INFO Analyst Agent finished
+2026-10-15 12:04:47,993 INFO Planner Agent started
+2026-10-15 12:04:53,442 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:04:53,443 INFO Planner Agent finished
+2026-10-15 12:04:53,443 INFO Developer Agent started
+2026-10-15 12:04:56,868 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:04:56,869 INFO Developer Agent finished
+2026-10-15 12:04:56,869 INFO Saved requirements, plan, navigation code
+2026-10-15 12:04:56,869 INFO initial Test Agent started
+2026-10-15 12:05:49,457 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:05:50,122 INFO initial pytest returncode=1
+2026-10-15 12:05:50,123 INFO initial Simulation created simulation_report.json: 51/64 passed
+2026-10-15 12:05:56,834 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:05:56,835 INFO initial Reviewer created simulation_review.json
+2026-10-15 12:05:56,835 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:05:57,701 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 5, 'escape_maneuvers': 0, 'min_clearance': 0.274, 'path_length': 7.9, 'steps_taken': 107, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.918740932701601, 1.379427072615717, -0.9000000000000012], 'history_length': 107, 'attempts': 1}
+2026-10-15 12:05:57,701 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:05:58,627 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:05:58,627 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:05:59,460 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:05:59,460 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:06:00,245 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 8, 'escape_maneuvers': 0, 'min_clearance': 0.265, 'path_length': 9.9, 'steps_taken': 142, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.047659024011846, 4.317868033950931, -1.2000000000000015], 'history_length': 142, 'attempts': 1}
+2026-10-15 12:06:00,246 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:06:02,893 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:06:02,894 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:06:08,995 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:06:08,996 INFO Developer revision saved navigation_logic_revised.py
+2026-10-15 12:06:08,996 INFO revision_1 Test Agent started
+2026-10-15 12:07:25,116 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:07:25,663 INFO revision_1 pytest returncode=1
+2026-10-15 12:07:25,664 INFO revision_1 Simulation created simulation_report.json: 51/64 passed
+2026-10-15 12:07:30,014 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:07:30,015 INFO revision_1 Reviewer created simulation_review.json
+2026-10-15 12:07:30,015 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:07:30,827 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 5, 'escape_maneuvers': 0, 'min_clearance': 0.274, 'path_length': 7.9, 'steps_taken': 107, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.918740932701601, 1.379427072615717, -0.9000000000000012], 'history_length': 107, 'attempts': 1}
+2026-10-15 12:07:30,827 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:07:31,612 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:07:31,613 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:07:32,408 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:07:32,408 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:07:33,187 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 8, 'escape_maneuvers': 0, 'min_clearance': 0.265, 'path_length': 9.9, 'steps_taken': 142, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.047659024011846, 4.317868033950931, -1.2000000000000015], 'history_length': 142, 'attempts': 1}
+2026-10-15 12:07:33,187 INFO revision_1 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:07:35,212 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:07:35,213 INFO revision_1 Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:07:43,676 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:07:43,677 INFO Developer revision saved navigation_logic_revised.py
+2026-10-15 12:07:43,678 INFO revision_2 Test Agent started
+2026-10-15 12:08:15,739 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:08:16,246 INFO revision_2 pytest returncode=1
+2026-10-15 12:08:16,247 INFO revision_2 Simulation created simulation_report.json: 62/64 passed
+2026-10-15 12:08:22,190 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:08:22,191 INFO revision_2 Reviewer created simulation_review.json
+2026-10-15 12:08:22,191 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:08:22,990 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:08:22,990 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:08:23,787 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:08:23,787 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:08:24,577 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:08:24,577 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:08:25,364 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:08:25,364 INFO revision_2 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:08:28,011 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:08:28,012 INFO revision_2 Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:08:36,209 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:08:36,210 INFO Developer revision saved navigation_logic_revised.py
+2026-10-15 12:08:36,210 INFO revision_3 Test Agent started
+2026-10-15 12:08:58,425 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:08:58,930 INFO revision_3 pytest returncode=1
+2026-10-15 12:08:58,931 INFO revision_3 Simulation created simulation_report.json: 61/64 passed
+2026-10-15 12:09:06,506 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:09:06,507 INFO revision_3 Reviewer created simulation_review.json
+2026-10-15 12:09:06,507 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:09:07,300 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:09:07,300 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:09:08,099 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:09:08,099 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:09:08,929 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:09:08,929 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:09:09,806 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:09:09,806 INFO revision_3 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:09:11,859 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:09:11,860 INFO revision_3 Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:09:11,872 INFO Pipeline finished; passed=False
+2026-10-15 12:12:27,119 INFO Loaded brief.txt; mode=Qwen online
+2026-10-15 12:12:27,119 INFO Analyst Agent started
+2026-10-15 12:12:28,552 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:12:28,552 INFO Analyst Agent finished
+2026-10-15 12:12:28,552 INFO Planner Agent started
+2026-10-15 12:12:34,961 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:12:34,961 INFO Planner Agent finished
+2026-10-15 12:12:34,961 INFO Developer Agent started
+2026-10-15 12:12:41,616 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:13:13,791 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:13:20,363 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:13:20,364 WARNING Developer output still disagrees with the plan for 1 of 64 states
+2026-10-15 12:13:20,364 INFO Developer Agent finished
+2026-10-15 12:13:20,365 INFO Saved requirements, plan, navigation code
+2026-10-15 12:13:20,365 INFO initial Test Agent started
+2026-10-15 12:14:00,355 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:14:00,858 INFO initial pytest returncode=1
+2026-10-15 12:14:00,858 INFO initial Simulation created simulation_report.json: 63/64 passed
+2026-10-15 12:14:05,201 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:14:05,202 INFO initial Reviewer created simulation_review.json
+2026-10-15 12:14:05,202 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:14:05,974 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:14:05,975 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:14:06,763 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:14:06,763 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:14:07,539 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:14:07,539 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:14:08,326 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:14:08,326 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:14:10,368 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:14:10,369 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:14:18,409 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:14:26,468 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:14:34,477 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:14:34,477 WARNING Revision still disagrees with the plan for 1 of 64 states
+2026-10-15 12:14:34,478 INFO Developer revision saved navigation_logic_revised.py
+2026-10-15 12:14:34,478 INFO revision_1 Test Agent started
+2026-10-15 12:15:18,515 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:15:19,024 INFO revision_1 pytest returncode=1
+2026-10-15 12:15:19,025 INFO revision_1 Simulation created simulation_report.json: 63/64 passed
+2026-10-15 12:15:23,609 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:15:23,610 INFO revision_1 Reviewer created simulation_review.json
+2026-10-15 12:15:23,610 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:15:24,386 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:15:24,386 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:15:25,167 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:15:25,167 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:15:25,940 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:15:25,940 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:15:26,708 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:15:26,708 INFO revision_1 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:15:28,543 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:15:28,543 INFO revision_1 Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:15:36,208 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:15:43,672 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:15:51,477 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:15:51,478 WARNING Revision still disagrees with the plan for 1 of 64 states
+2026-10-15 12:15:51,478 INFO Developer revision saved navigation_logic_revised.py
+2026-10-15 12:15:51,478 INFO revision_2 Test Agent started
+2026-10-15 12:15:58,085 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:15:58,571 INFO revision_2 pytest returncode=1
+2026-10-15 12:15:58,572 INFO revision_2 Simulation created simulation_report.json: 63/64 passed
+2026-10-15 12:16:03,267 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:16:03,268 INFO revision_2 Reviewer created simulation_review.json
+2026-10-15 12:16:03,268 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:16:04,048 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:16:04,048 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:16:04,844 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:16:04,844 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:16:05,652 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:16:05,652 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:16:06,458 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:16:06,458 INFO revision_2 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:16:08,556 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:16:08,557 INFO revision_2 Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:16:16,313 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:16:23,498 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:16:30,670 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:16:30,671 WARNING Revision still disagrees with the plan for 1 of 64 states
+2026-10-15 12:16:30,671 INFO Developer revision saved navigation_logic_revised.py
+2026-10-15 12:16:30,671 INFO revision_3 Test Agent started
+2026-10-15 12:16:36,897 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:16:37,339 INFO revision_3 pytest returncode=1
+2026-10-15 12:16:37,339 INFO revision_3 Simulation created simulation_report.json: 63/64 passed
+2026-10-15 12:16:41,630 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:16:41,630 INFO revision_3 Reviewer created simulation_review.json
+2026-10-15 12:16:41,630 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:16:42,354 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:16:42,354 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:16:43,100 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:16:43,101 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:16:43,863 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:16:43,864 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:16:44,610 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:16:44,611 INFO revision_3 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:16:46,387 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:16:46,388 INFO revision_3 Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:16:46,399 INFO Pipeline finished; passed=False
+2026-10-15 12:17:11,957 INFO Loaded brief.txt; mode=Qwen online
+2026-10-15 12:17:11,958 INFO Analyst Agent started
+2026-10-15 12:17:13,316 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:17:13,316 INFO Analyst Agent finished
+2026-10-15 12:17:13,316 INFO Planner Agent started
+2026-10-15 12:17:19,753 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:17:19,753 INFO Planner Agent finished
+2026-10-15 12:17:19,753 INFO Developer Agent started
+2026-10-15 12:17:23,890 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:17:31,309 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:17:38,288 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:17:38,289 WARNING Developer output still disagrees with the plan for 2 of 64 states
+2026-10-15 12:17:38,289 INFO Developer Agent finished
+2026-10-15 12:17:38,290 INFO Saved requirements, plan, navigation code
+2026-10-15 12:17:38,290 INFO initial Test Agent started
+2026-10-15 12:18:06,635 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:18:07,131 INFO initial pytest returncode=1
+2026-10-15 12:18:07,132 INFO initial Simulation created simulation_report.json: 62/64 passed
+2026-10-15 12:18:10,832 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:18:10,833 INFO initial Reviewer created simulation_review.json
+2026-10-15 12:18:10,833 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:18:11,594 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:18:11,595 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:18:12,365 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:18:12,365 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:18:13,148 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:18:13,149 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:18:13,911 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:18:13,911 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:18:15,826 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:18:15,826 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:18:25,000 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:18:34,023 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:18:43,098 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:18:43,099 WARNING Revision still disagrees with the plan for 1 of 64 states
+2026-10-15 12:18:43,099 INFO Developer revision saved navigation_logic_revised.py
+2026-10-15 12:18:43,099 INFO revision_1 Test Agent started
+2026-10-15 12:19:09,313 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:19:09,832 INFO revision_1 pytest returncode=1
+2026-10-15 12:19:09,833 INFO revision_1 Simulation created simulation_report.json: 63/64 passed
+2026-10-15 12:19:13,401 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:19:13,401 INFO revision_1 Reviewer created simulation_review.json
+2026-10-15 12:19:13,401 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:19:14,232 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 2, 'min_clearance': 0.284, 'path_length': 7.5, 'steps_taken': 198, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.8260391273797945, 1.2873566238902885, -0.600000000000001], 'history_length': 198, 'attempts': 1}
+2026-10-15 12:19:14,232 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:19:15,084 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': False, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 6, 'min_clearance': 0.343, 'path_length': 3.9, 'steps_taken': 300, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'termination': 'max_steps', 'final_pose': [4.146552985578425, 3.24225015598859, 1.0999999999999996], 'history_length': 300, 'attempts': 1}
+2026-10-15 12:19:15,084 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:19:15,906 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': False, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 5, 'min_clearance': 0.264, 'path_length': 6.6, 'steps_taken': 300, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'termination': 'max_steps', 'final_pose': [5.030458685337749, 5.984907465862831, 2.399999999999995], 'history_length': 300, 'attempts': 1}
+2026-10-15 12:19:15,907 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:19:16,719 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': False, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 6, 'min_clearance': 0.343, 'path_length': 3.9, 'steps_taken': 300, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'termination': 'max_steps', 'final_pose': [4.146552985578425, 3.24225015598859, 1.0999999999999996], 'history_length': 300, 'attempts': 1}
+2026-10-15 12:19:16,720 INFO revision_1 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:19:21,920 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:19:21,921 INFO revision_1 Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:19:21,942 WARNING revision_1 scored below initial; keeping the verified artifact
+2026-10-15 12:19:21,950 INFO Pipeline finished; passed=False
+2026-10-15 12:20:37,968 INFO Loaded brief.txt; mode=Qwen online
+2026-10-15 12:20:37,968 INFO Analyst Agent started
+2026-10-15 12:20:39,187 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:20:39,187 INFO Analyst Agent finished
+2026-10-15 12:20:39,187 INFO Planner Agent started
+2026-10-15 12:20:45,562 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:20:45,562 INFO Planner Agent finished
+2026-10-15 12:20:45,562 INFO Developer Agent started
+2026-10-15 12:20:49,454 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:20:54,606 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:20:59,381 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:20:59,382 WARNING Developer output still disagrees with the plan for 2 of 64 states
+2026-10-15 12:20:59,382 INFO Developer Agent finished
+2026-10-15 12:20:59,382 INFO Saved requirements, plan, navigation code
+2026-10-15 12:20:59,382 INFO initial Test Agent started
+2026-10-15 12:21:21,705 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:21:22,163 INFO initial pytest returncode=1
+2026-10-15 12:21:22,164 INFO initial Simulation created simulation_report.json: 62/64 passed
+2026-10-15 12:21:24,272 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:21:24,272 INFO initial Reviewer created simulation_review.json
+2026-10-15 12:21:24,272 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:21:24,965 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:21:24,965 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:21:25,692 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:21:25,693 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:21:26,387 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:21:26,387 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:21:27,117 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:21:27,117 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:21:28,710 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:21:28,710 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:21:36,542 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:21:42,562 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:21:50,205 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:21:50,206 WARNING Revision still disagrees with the plan for 1 of 64 states
+2026-10-15 12:21:50,206 INFO Developer revision saved navigation_logic_revised.py
+2026-10-15 12:21:50,207 INFO revision_1 Test Agent started
+2026-10-15 12:22:36,543 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:22:37,005 INFO revision_1 pytest returncode=1
+2026-10-15 12:22:37,006 INFO revision_1 Simulation created simulation_report.json: 63/64 passed
+2026-10-15 12:22:39,321 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:22:39,322 INFO revision_1 Reviewer created simulation_review.json
+2026-10-15 12:22:39,322 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:22:40,033 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 2, 'min_clearance': 0.284, 'path_length': 7.5, 'steps_taken': 198, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.8260391273797945, 1.2873566238902885, -0.600000000000001], 'history_length': 198, 'attempts': 1}
+2026-10-15 12:22:40,034 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:22:40,776 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': False, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 6, 'min_clearance': 0.343, 'path_length': 3.9, 'steps_taken': 300, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'termination': 'max_steps', 'final_pose': [4.146552985578425, 3.24225015598859, 1.0999999999999996], 'history_length': 300, 'attempts': 1}
+2026-10-15 12:22:40,776 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:22:44,060 WARNING IR-SIM attempt 1/3 failed for irsim_worlds/world_difficult.yaml (exit=3221225477)
+2026-10-15 12:22:44,060 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=2
+2026-10-15 12:22:44,778 WARNING IR-SIM irsim_worlds/world_difficult.yaml succeeded on attempt 2
+2026-10-15 12:22:44,780 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': False, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 5, 'min_clearance': 0.264, 'path_length': 6.6, 'steps_taken': 300, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'termination': 'max_steps', 'final_pose': [5.030458685337749, 5.984907465862831, 2.399999999999995], 'history_length': 300, 'attempts': 2}
+2026-10-15 12:22:44,780 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:22:45,488 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': False, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 6, 'min_clearance': 0.343, 'path_length': 3.9, 'steps_taken': 300, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'failed', 'efficiency_passed': False, 'termination': 'max_steps', 'final_pose': [4.146552985578425, 3.24225015598859, 1.0999999999999996], 'history_length': 300, 'attempts': 1}
+2026-10-15 12:22:45,488 INFO revision_1 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:22:49,581 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:22:49,581 INFO revision_1 Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:22:49,596 WARNING revision_1 scored below initial; keeping the verified artifact
+2026-10-15 12:22:49,603 INFO Pipeline finished; passed=False
+2026-10-15 12:30:47,229 INFO Loaded brief.txt; mode=Qwen online
+2026-10-15 12:30:47,229 INFO Analyst Agent started
+2026-10-15 12:30:48,416 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:30:48,416 INFO Analyst Agent finished
+2026-10-15 12:30:48,416 INFO Planner Agent started
+2026-10-15 12:30:54,053 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:30:54,053 INFO Planner Agent finished
+2026-10-15 12:30:54,053 INFO Developer Agent started
+2026-10-15 12:30:57,604 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:31:02,770 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:31:10,621 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:31:10,622 WARNING Developer output still disagrees with the plan for 7 of 64 states
+2026-10-15 12:31:10,622 INFO Developer Agent finished
+2026-10-15 12:31:10,623 WARNING initial code disagreed with the plan for 7 of the 64 states; using the plan-compiled implementation
+2026-10-15 12:31:10,623 INFO Saved requirements, plan, navigation code
+2026-10-15 12:31:10,623 INFO initial Test Agent started
+2026-10-15 12:32:06,202 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:32:06,645 INFO initial pytest returncode=1
+2026-10-15 12:32:06,645 WARNING initial generated tests contradict the plan (attempt 1/3); regenerating
+2026-10-15 12:32:31,687 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:32:32,061 INFO initial pytest returncode=0
+2026-10-15 12:32:32,062 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-15 12:32:34,796 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:32:34,797 INFO initial Reviewer created simulation_review.json
+2026-10-15 12:32:34,797 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:32:35,551 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:32:35,551 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:32:36,232 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:32:36,232 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:32:36,940 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:32:36,940 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:32:37,637 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:32:37,637 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:32:39,259 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:32:39,260 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:32:39,272 INFO Pipeline finished; passed=True
+2026-10-15 12:35:13,455 INFO Loaded brief.txt; mode=offline replay
+2026-10-15 12:35:13,456 INFO Saved requirements, plan, navigation code
+2026-10-15 12:35:13,456 INFO Analyst and Planner fixture replay finished; Developer fixture replay finished
+2026-10-15 12:35:13,456 INFO initial Test Agent started
+2026-10-15 12:35:13,840 INFO initial pytest returncode=0
+2026-10-15 12:35:13,841 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-15 12:35:13,841 INFO initial Reviewer created simulation_review.json
+2026-10-15 12:35:13,842 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:35:14,557 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:35:14,557 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:35:15,235 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:35:15,235 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:35:15,947 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:35:15,947 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:35:16,659 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:35:16,660 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:35:16,660 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:35:16,675 INFO Pipeline finished; passed=True
+2026-10-15 12:35:17,004 INFO Loaded brief.txt; mode=Qwen online
+2026-10-15 12:35:17,004 INFO Analyst Agent started
+2026-10-15 12:35:18,136 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:35:18,137 INFO Analyst Agent finished
+2026-10-15 12:35:18,137 INFO Planner Agent started
+2026-10-15 12:35:23,365 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:35:23,365 INFO Planner Agent finished
+2026-10-15 12:35:23,365 INFO Developer Agent started
+2026-10-15 12:35:26,898 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:35:29,811 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:35:36,039 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:35:36,041 WARNING Developer output still disagrees with the plan for 2 of 64 states
+2026-10-15 12:35:36,041 INFO Developer Agent finished
+2026-10-15 12:35:36,042 WARNING initial code disagreed with the plan for 2 of the 64 states; using the plan-compiled implementation
+2026-10-15 12:35:36,042 INFO Saved requirements, plan, navigation code
+2026-10-15 12:35:36,042 INFO initial Test Agent started
+2026-10-15 12:36:43,983 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:36:44,436 INFO initial pytest returncode=1
+2026-10-15 12:36:44,436 WARNING initial generated tests contradict the plan (attempt 1/3); regenerating
+2026-10-15 12:37:33,041 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:37:33,421 INFO initial pytest returncode=0
+2026-10-15 12:37:33,422 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-15 12:37:35,718 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:37:35,718 INFO initial Reviewer created simulation_review.json
+2026-10-15 12:37:35,719 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:37:36,439 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:37:36,439 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:37:37,158 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:37:37,158 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:37:37,841 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:37:37,842 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:37:38,547 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:37:38,547 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:37:40,147 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:37:40,147 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:37:45,317 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:37:45,318 INFO Developer revision saved navigation_logic_revised.py
+2026-10-15 12:37:45,319 INFO revision_1 Test Agent started
+2026-10-15 12:38:42,080 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:38:42,533 INFO revision_1 pytest returncode=1
+2026-10-15 12:38:42,534 WARNING revision_1 generated tests contradict the plan (attempt 1/3); regenerating
+2026-10-15 12:39:30,450 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:39:30,883 INFO revision_1 pytest returncode=1
+2026-10-15 12:39:30,884 WARNING revision_1 generated tests contradict the plan (attempt 2/3); regenerating
+2026-10-15 12:40:45,681 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:40:46,126 INFO revision_1 pytest returncode=1
+2026-10-15 12:40:46,127 WARNING revision_1 generated tests contradict the plan (attempt 3/3); regenerating
+2026-10-15 12:40:46,127 WARNING revision_1 generated tests replaced by the plan decision table
+2026-10-15 12:40:46,515 INFO revision_1 pytest returncode=0
+2026-10-15 12:40:46,515 INFO revision_1 Simulation created simulation_report.json: 64/64 passed
+2026-10-15 12:40:50,079 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:40:50,080 INFO revision_1 Reviewer created simulation_review.json
+2026-10-15 12:40:50,080 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:40:50,791 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:40:50,791 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:40:51,487 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:40:51,487 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:40:52,178 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:40:52,178 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:40:52,888 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:40:52,889 INFO revision_1 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:40:54,484 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:40:54,484 INFO revision_1 Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:40:54,495 INFO Pipeline finished; passed=True
+2026-10-15 12:51:13,228 INFO Loaded brief.txt; mode=offline replay
+2026-10-15 12:51:13,229 INFO Saved requirements, plan, navigation code
+2026-10-15 12:51:13,230 INFO Analyst and Planner fixture replay finished; Developer fixture replay finished
+2026-10-15 12:51:13,230 INFO initial Test Agent started
+2026-10-15 12:51:13,636 INFO initial pytest returncode=0
+2026-10-15 12:51:13,637 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-15 12:51:13,637 INFO initial Reviewer created simulation_review.json
+2026-10-15 12:51:13,637 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:51:14,303 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:51:14,304 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:51:14,994 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:51:14,994 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:51:15,699 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:51:15,699 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:51:16,374 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:51:16,375 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:51:16,375 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:51:16,384 INFO Pipeline finished; passed=True
+2026-10-15 12:51:16,727 INFO Loaded brief.txt; mode=Qwen online
+2026-10-15 12:51:16,727 INFO Analyst Agent started
+2026-10-15 12:51:20,248 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:51:20,249 INFO Analyst Agent finished
+2026-10-15 12:51:20,249 INFO Planner Agent started
+2026-10-15 12:51:26,110 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:51:26,112 INFO Planner Agent finished
+2026-10-15 12:51:26,112 INFO Developer Agent started
+2026-10-15 12:51:31,665 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:51:37,253 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:51:40,141 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:51:40,141 WARNING Developer output still disagrees with the plan for 1 of 64 states
+2026-10-15 12:51:40,141 INFO Developer Agent finished
+2026-10-15 12:51:40,142 WARNING initial code disagreed with the plan for 1 of the 64 states; using the plan-compiled implementation
+2026-10-15 12:51:40,142 INFO Saved requirements, plan, navigation code
+2026-10-15 12:51:40,142 INFO initial Test Agent started
+2026-10-15 12:52:02,228 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:52:02,716 INFO initial pytest returncode=2
+2026-10-15 12:52:02,716 WARNING initial generated tests contradict the plan (attempt 1/3); regenerating
+2026-10-15 12:52:59,339 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:52:59,791 INFO initial pytest returncode=1
+2026-10-15 12:52:59,791 WARNING initial generated tests contradict the plan (attempt 2/3); regenerating
+2026-10-15 12:54:01,443 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:54:01,877 INFO initial pytest returncode=1
+2026-10-15 12:54:01,877 WARNING initial generated tests contradict the plan (attempt 3/3); regenerating
+2026-10-15 12:54:01,878 WARNING initial generated tests replaced by the plan decision table
+2026-10-15 12:54:02,253 INFO initial pytest returncode=0
+2026-10-15 12:54:02,254 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-15 12:54:05,597 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:54:05,598 INFO initial Reviewer created simulation_review.json
+2026-10-15 12:54:05,598 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:54:06,305 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:54:06,305 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:54:07,001 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:54:07,001 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:54:07,677 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:54:07,677 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:54:08,401 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:54:08,401 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:54:10,478 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:54:10,478 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:54:15,478 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:54:15,479 INFO Developer revision saved navigation_logic_revised.py
+2026-10-15 12:54:15,479 INFO revision_1 Test Agent started
+2026-10-15 12:55:13,977 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:55:14,433 INFO revision_1 pytest returncode=1
+2026-10-15 12:55:14,433 WARNING revision_1 generated tests contradict the plan (attempt 1/3); regenerating
+2026-10-15 12:55:57,286 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:55:57,728 INFO revision_1 pytest returncode=1
+2026-10-15 12:55:57,728 WARNING revision_1 generated tests contradict the plan (attempt 2/3); regenerating
+2026-10-15 12:56:45,939 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:56:46,386 INFO revision_1 pytest returncode=1
+2026-10-15 12:56:46,386 WARNING revision_1 generated tests contradict the plan (attempt 3/3); regenerating
+2026-10-15 12:56:46,386 WARNING revision_1 generated tests replaced by the plan decision table
+2026-10-15 12:56:46,770 INFO revision_1 pytest returncode=0
+2026-10-15 12:56:46,770 INFO revision_1 Simulation created simulation_report.json: 64/64 passed
+2026-10-15 12:56:49,743 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:56:49,744 INFO revision_1 Reviewer created simulation_review.json
+2026-10-15 12:56:49,744 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 12:56:50,461 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 12:56:50,461 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 12:56:51,171 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 12:56:51,171 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 12:56:51,851 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 12:56:51,851 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 12:56:52,564 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 12:56:52,564 INFO revision_1 IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 12:56:54,181 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 12:56:54,181 INFO revision_1 Benchmark Reviewer created benchmark_review.json
+2026-10-15 12:56:54,192 INFO Pipeline finished; passed=True
+2026-10-15 13:25:22,386 INFO Loaded brief.txt; mode=Qwen online
+2026-10-15 13:25:22,386 INFO Analyst Agent started
+2026-10-15 13:25:25,912 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:25:25,912 INFO Analyst Agent finished
+2026-10-15 13:25:25,912 INFO Planner Agent started
+2026-10-15 13:25:31,568 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:25:31,568 INFO Planner Agent finished
+2026-10-15 13:25:31,568 INFO Developer Agent started
+2026-10-15 13:25:35,164 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:25:39,965 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:25:42,805 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:25:42,806 WARNING Developer output still disagrees with the plan for 2 of 64 states
+2026-10-15 13:25:42,806 INFO Developer Agent finished
+2026-10-15 13:25:42,807 WARNING initial code disagreed with the plan for 2 of the 64 states; using the plan-compiled implementation
+2026-10-15 13:25:42,807 INFO Saved requirements, plan, navigation code
+2026-10-15 13:25:42,807 INFO initial Test Agent started
+2026-10-15 13:26:30,733 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:26:31,096 INFO initial pytest returncode=1
+2026-10-15 13:26:31,096 WARNING initial generated tests contradict the plan (attempt 1/3); regenerating
+2026-10-15 13:27:16,275 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:27:16,632 INFO initial pytest returncode=1
+2026-10-15 13:27:16,632 WARNING initial generated tests contradict the plan (attempt 2/3); regenerating
+2026-10-15 13:27:42,814 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:27:43,178 INFO initial pytest returncode=1
+2026-10-15 13:27:43,178 WARNING initial generated tests contradict the plan (attempt 3/3); regenerating
+2026-10-15 13:27:43,178 WARNING initial generated tests replaced by the plan decision table
+2026-10-15 13:27:43,531 INFO initial pytest returncode=0
+2026-10-15 13:27:43,532 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-15 13:27:47,870 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:27:47,871 INFO initial Reviewer created simulation_review.json
+2026-10-15 13:27:47,871 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 13:27:48,502 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 13:27:48,502 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 13:27:49,133 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 13:27:49,133 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 13:27:49,753 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 13:27:49,753 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 13:27:50,388 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 13:27:50,388 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 13:27:52,413 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:27:52,414 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 13:27:52,426 INFO Pipeline finished; passed=True
+2026-10-15 13:28:26,909 INFO Loaded brief.txt; mode=Qwen online
+2026-10-15 13:28:26,909 INFO Analyst Agent started
+2026-10-15 13:28:28,034 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:28:28,034 INFO Analyst Agent finished
+2026-10-15 13:28:28,034 INFO Planner Agent started
+2026-10-15 13:28:33,229 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:28:33,229 INFO Planner Agent finished
+2026-10-15 13:28:33,229 INFO Developer Agent started
+2026-10-15 13:28:36,511 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:28:42,030 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:28:46,896 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:28:46,897 INFO Developer Agent finished
+2026-10-15 13:28:46,898 INFO Saved requirements, plan, navigation code
+2026-10-15 13:28:46,898 INFO initial Test Agent started
+2026-10-15 13:29:09,312 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:29:09,672 INFO initial pytest returncode=1
+2026-10-15 13:29:09,672 WARNING initial generated tests contradict the plan (attempt 1/3); regenerating
+2026-10-15 13:29:16,943 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:29:17,340 INFO initial pytest returncode=1
+2026-10-15 13:29:17,340 WARNING initial generated tests contradict the plan (attempt 2/3); regenerating
+2026-10-15 13:29:39,110 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:29:39,490 INFO initial pytest returncode=1
+2026-10-15 13:29:39,490 WARNING initial generated tests contradict the plan (attempt 3/3); regenerating
+2026-10-15 13:29:39,490 WARNING initial generated tests replaced by the plan decision table
+2026-10-15 13:29:39,847 INFO initial pytest returncode=0
+2026-10-15 13:29:39,847 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-15 13:29:42,402 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:29:42,402 INFO initial Reviewer created simulation_review.json
+2026-10-15 13:29:42,402 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 13:29:43,090 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 13:29:43,090 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 13:29:43,735 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 13:29:43,735 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 13:29:44,370 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 13:29:44,371 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 13:29:45,065 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 13:29:45,065 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 13:29:46,804 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:29:46,805 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 13:29:46,818 INFO Pipeline finished; passed=True
+2026-10-15 13:40:38,690 INFO Loaded brief.txt; mode=offline replay
+2026-10-15 13:40:38,691 INFO Saved requirements, plan, navigation code
+2026-10-15 13:40:38,691 INFO Analyst and Planner fixture replay finished; Developer fixture replay finished
+2026-10-15 13:40:38,691 INFO initial Test Agent started
+2026-10-15 13:40:39,076 INFO initial pytest returncode=0
+2026-10-15 13:40:39,077 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-15 13:40:39,077 INFO initial Reviewer created simulation_review.json
+2026-10-15 13:40:39,077 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 13:40:45,941 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 13:40:45,941 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 13:40:52,609 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 13:40:52,609 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 13:41:00,023 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 13:41:00,023 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 13:41:08,022 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 13:41:08,023 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 13:41:08,023 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 13:41:08,029 INFO Pipeline finished; passed=True
+2026-10-15 13:41:11,536 INFO Loaded brief.txt; mode=Qwen online
+2026-10-15 13:41:11,536 INFO Analyst Agent started
+2026-10-15 13:41:15,029 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:41:15,030 INFO Analyst Agent finished
+2026-10-15 13:41:15,030 INFO Planner Agent started
+2026-10-15 13:41:20,656 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:41:20,656 INFO Planner Agent finished
+2026-10-15 13:41:20,656 INFO Developer Agent started
+2026-10-15 13:41:24,111 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:41:28,932 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:41:28,933 INFO Developer Agent finished
+2026-10-15 13:41:28,934 INFO Saved requirements, plan, navigation code
+2026-10-15 13:41:28,934 INFO initial Test Agent started
+2026-10-15 13:41:52,877 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:41:53,293 INFO initial pytest returncode=1
+2026-10-15 13:41:53,293 WARNING initial generated tests contradict the plan (attempt 1/3); regenerating
+2026-10-15 13:42:35,729 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:42:36,222 INFO initial pytest returncode=1
+2026-10-15 13:42:36,223 WARNING initial generated tests contradict the plan (attempt 2/3); regenerating
+2026-10-15 13:42:58,422 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:42:58,845 INFO initial pytest returncode=1
+2026-10-15 13:42:58,845 WARNING initial generated tests contradict the plan (attempt 3/3); regenerating
+2026-10-15 13:42:58,845 WARNING initial generated tests replaced by the plan decision table
+2026-10-15 13:42:59,254 INFO initial pytest returncode=0
+2026-10-15 13:42:59,255 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-15 13:43:05,808 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:43:05,808 INFO initial Reviewer created simulation_review.json
+2026-10-15 13:43:05,808 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 13:43:12,792 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 13:43:12,792 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 13:43:19,523 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 13:43:19,523 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 13:43:26,885 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 13:43:26,885 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 13:43:34,639 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 13:43:34,639 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 13:43:36,781 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:43:36,781 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 13:43:36,792 INFO Pipeline finished; passed=True
+2026-10-15 13:45:32,034 INFO Loaded brief.txt; mode=Qwen online
+2026-10-15 13:45:32,034 INFO Analyst Agent started
+2026-10-15 13:45:33,221 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:45:33,221 INFO Analyst Agent finished
+2026-10-15 13:45:33,221 INFO Planner Agent started
+2026-10-15 13:45:38,383 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:45:38,383 INFO Planner Agent finished
+2026-10-15 13:45:38,383 INFO Developer Agent started
+2026-10-15 13:45:41,587 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:45:46,945 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:45:49,712 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:45:49,712 WARNING Developer output still disagrees with the plan for 2 of 64 states
+2026-10-15 13:45:49,712 INFO Developer Agent finished
+2026-10-15 13:45:49,713 WARNING initial code disagreed with the plan for 2 of the 64 states; using the plan-compiled implementation
+2026-10-15 13:45:49,714 INFO Saved requirements, plan, navigation code
+2026-10-15 13:45:49,714 INFO initial Test Agent started
+2026-10-15 13:46:36,675 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:46:37,034 INFO initial pytest returncode=1
+2026-10-15 13:46:37,035 WARNING initial generated tests contradict the plan (attempt 1/3); regenerating
+2026-10-15 13:47:23,731 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:47:24,089 INFO initial pytest returncode=1
+2026-10-15 13:47:24,089 WARNING initial generated tests contradict the plan (attempt 2/3); regenerating
+2026-10-15 13:48:20,985 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:48:21,370 INFO initial pytest returncode=1
+2026-10-15 13:48:21,370 WARNING initial generated tests contradict the plan (attempt 3/3); regenerating
+2026-10-15 13:48:21,371 WARNING initial generated tests replaced by the plan decision table
+2026-10-15 13:48:21,726 INFO initial pytest returncode=0
+2026-10-15 13:48:21,727 INFO initial Simulation created simulation_report.json: 64/64 passed
+2026-10-15 13:48:24,966 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:48:24,967 INFO initial Reviewer created simulation_review.json
+2026-10-15 13:48:24,967 INFO IR-SIM started world=irsim_worlds/world_easy.yaml attempt=1
+2026-10-15 13:48:31,773 INFO IR-SIM world=irsim_worlds/world_easy.yaml report={'world': 'irsim_worlds/world_easy.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.348, 'path_length': 7.8, 'steps_taken': 103, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.951300588282895, 1.306335347295568, -1.0000000000000009], 'history_length': 103, 'attempts': 1}
+2026-10-15 13:48:31,773 INFO IR-SIM started world=irsim_worlds/world_medium.yaml attempt=1
+2026-10-15 13:48:38,386 INFO IR-SIM world=irsim_worlds/world_medium.yaml report={'world': 'irsim_worlds/world_medium.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 7.7, 'steps_taken': 95, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.746671935506502, 4.260945324725844, -0.30000000000000027], 'history_length': 95, 'attempts': 1}
+2026-10-15 13:48:38,387 INFO IR-SIM started world=irsim_worlds/world_difficult.yaml attempt=1
+2026-10-15 13:48:45,791 INFO IR-SIM world=irsim_worlds/world_difficult.yaml report={'world': 'irsim_worlds/world_difficult.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.264, 'path_length': 10.0, 'steps_taken': 122, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [7.64397292009539, 8.11587835268799, 0.09999999999999964], 'history_length': 122, 'attempts': 1}
+2026-10-15 13:48:45,791 INFO IR-SIM started world=irsim_worlds/world_custom.yaml attempt=1
+2026-10-15 13:48:53,520 INFO IR-SIM world=irsim_worlds/world_custom.yaml report={'world': 'irsim_worlds/world_custom.yaml', 'reached_goal': True, 'collision_or_done': False, 'collisions': 0, 'safety_overrides': 0, 'escape_maneuvers': 0, 'min_clearance': 0.339, 'path_length': 9.7, 'steps_taken': 134, 'max_steps_allowed': 300, 'efficient_step_limit': 200, 'efficiency_status': 'efficient', 'efficiency_passed': True, 'termination': 'goal_reached', 'final_pose': [8.04001850125743, 4.377603129303416, -1.2000000000000015], 'history_length': 134, 'attempts': 1}
+2026-10-15 13:48:53,520 INFO initial IR-SIM benchmark created irsim_benchmark_report.json
+2026-10-15 13:48:55,102 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-15 13:48:55,102 INFO initial Benchmark Reviewer created benchmark_review.json
+2026-10-15 13:48:55,113 INFO Pipeline finished; passed=True

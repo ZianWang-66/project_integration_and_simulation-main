@@ -1,5 +1,5 @@
 {
-  "mode": "offline",
+  "mode": "online",
   "completed": true,
   "passed": true,
   "checks": [
@@ -30,6 +30,11 @@
     },
     {
       "name": "Offline pipeline and four IR-SIM worlds",
+      "returncode": 0,
+      "passed": true
+    },
+    {
+      "name": "Online Qwen pipeline with revision",
       "returncode": 0,
       "passed": true
     }

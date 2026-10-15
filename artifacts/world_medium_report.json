@@ -1,16 +1,23 @@
 {
+  "world": "irsim_worlds/world_medium.yaml",
   "reached_goal": true,
   "collision_or_done": false,
-  "steps_taken": 148,
+  "collisions": 0,
+  "safety_overrides": 0,
+  "escape_maneuvers": 0,
+  "min_clearance": 0.339,
+  "path_length": 7.7,
+  "steps_taken": 95,
   "max_steps_allowed": 300,
   "efficient_step_limit": 200,
   "efficiency_status": "efficient",
   "efficiency_passed": true,
+  "termination": "goal_reached",
   "final_pose": [
-    7.712490771958734,
-    4.253312110735628,
-    -0.40000000000000036
+    7.746671935506502,
+    4.260945324725844,
+    -0.30000000000000027
   ],
-  "history_length": 148,
-  "world": "irsim_worlds/world_medium.yaml"
+  "history_length": 95,
+  "attempts": 1
 }

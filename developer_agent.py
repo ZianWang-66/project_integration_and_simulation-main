@@ -1,8 +1,31 @@
 ## The logic is fairly similar to the Analyst and Planner agents
 import ast
 import json
+import logging
 import os
 from ollama import Client
+from navigation_spec import DECISION_ORDER, check_navigation
+
+
+def _mismatch_feedback(failures, limit=4):
+    """Feedback for an output that does not match the plan's decision table.
+
+    Each wrong state is explained step by step, because the resolution order
+    (goal direction first, then the fallback order) is easy to misread.
+    """
+    wrong = json.dumps(
+        [{"state": f["state"], "your_action": f["actual"], "plan_action": f["expected"]}
+         for f in failures[:limit]], indent=2)
+    why = "\n".join("- " + f.get("why", "") for f in failures[:limit])
+    return (
+        "\n\nYour previous code disagreed with the plan's decision table for "
+        f"{len(failures)} of the 64 boolean states. The first wrong states were:\n"
+        + wrong
+        + "\nWhy the plan returns those actions:\n" + why
+        + "\nThe plan resolves a state by " + DECISION_ORDER + "."
+        + "\nRewrite the branch structure so every state follows that order, and "
+        "return only corrected Python source code."
+    )
 
 
 ## System prompt for the Developer Agent
@@ -19,7 +42,17 @@ Rules you must follow:
        front_blocked, left_blocked, right_blocked
    and return the chosen action as a str.
 5. You may define any private helper functions you like (e.g. `decide_action`), but they must NOT be called by outside code. Only `decide_next_move` is public.
-6. The code must follow the navigation strategy and decisions from the plan exactly.
+6. The code must follow the navigation strategy and decisions from the plan exactly,
+   which means:
+     * resolve the goal direction first: use goal_ahead when it is set, otherwise
+       goal_on_left, otherwise goal_on_right (a state may have more than one goal
+       flag set, and this order decides which one wins);
+     * pursue that direction: FORWARD when the goal is ahead, LEFT when it is on
+       the left, RIGHT when it is on the right;
+     * when that action is blocked, use the first unblocked action in this order:
+       the goal-direction action, then FORWARD, then LEFT, then RIGHT;
+     * return STOP only when all three directions are blocked, or when no goal
+       direction is known at all.
 7. The code must implement safe stop when no safe direction is available.
 8. The code must be syntactically valid Python and ready to run.
 
@@ -136,15 +169,10 @@ def run_developer(plan, max_attempts=3):
     user_content = json.dumps(plan, indent=2)
 
     last_raw_output = ""
+    best_code, best_failures = None, None
     for attempt in range(1, max_attempts + 1):
         if attempt > 1:
-
-            user_content += (
-                "\n\nYour previous output FAILED validation: it was not syntactically "
-                "valid Python, or it contained no function definition.\n"
-                "Now output ONLY pure Python source code. No explanations, no markdown "
-                "fences (```), no text before or after the code."
-            )
+            user_content += "\n\n" + retry_note
 
         response = client.chat(
             model="qwen3:8b",
@@ -159,7 +187,24 @@ def run_developer(plan, max_attempts=3):
         code_text = extract_python_code(raw_output)
 
         if validate_developer_output(code_text):
-            return code_text
+            failures = check_navigation(code_text)
+            if not failures:
+                return code_text
+            retry_note = _mismatch_feedback(failures)
+            if best_failures is None or len(failures) < len(best_failures):
+                best_code, best_failures = code_text, failures
+        else:
+            retry_note = (
+                "Your previous output FAILED validation: it was not syntactically "
+                "valid Python, or it contained no function definition.\n"
+                "Now output ONLY pure Python source code. No explanations, no markdown "
+                "fences (```), no text before or after the code."
+            )
+
+    if best_code is not None:
+        logging.warning("Developer output still disagrees with the plan for %s of 64 states",
+                        len(best_failures))
+        return best_code
 
     os.makedirs("artifacts", exist_ok=True)
     raw_path = os.path.join("artifacts", "developer_raw_output.txt")
@@ -179,12 +224,26 @@ def run_developer_revision(original_code, review_notes, benchmark_report, requir
     data = {"original_code": original_code, "review_notes": review_notes,
             "benchmark_report": benchmark_report, "requirements": requirements, "plan": plan}
     prompt = DEVELOPER_SYSTEM_PROMPT + "\nRevise the original code using measured failures. Check every fallback for obstacles. Avoid repeated turn oscillation."
+    best_code, best_failures = None, None
     for attempt in range(max_attempts):
         code = extract_python_code(ask_agent(prompt, data))
         if validate_developer_output(code):
-            path = Path(output_path)
-            path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(code, encoding="utf-8")
-            return code
-        data["validation_error"] = "Return valid Python with decide_next_move(state)."
+            failures = check_navigation(code)
+            if not failures:
+                path = Path(output_path)
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(code, encoding="utf-8")
+                return code
+            prompt += _mismatch_feedback(failures)
+            if best_failures is None or len(failures) < len(best_failures):
+                best_code, best_failures = code, failures
+        else:
+            data["validation_error"] = "Return valid Python with decide_next_move(state)."
+    if best_code is not None:
+        logging.warning("Revision still disagrees with the plan for %s of 64 states",
+                        len(best_failures))
+        path = Path(output_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(best_code, encoding="utf-8")
+        return best_code
     raise ValueError("Developer revision failed validation")

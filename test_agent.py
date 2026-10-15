@@ -1,12 +1,10 @@
 import ast
-import itertools
 import logging
 from pathlib import Path
 from agent_utils import ask_agent
 from developer_agent import extract_python_code
+from navigation_spec import DECISION_ORDER, KEYS, expected_action, scenarios  # noqa: F401
 
-KEYS = ("goal_ahead", "goal_on_left", "goal_on_right",
-        "front_blocked", "left_blocked", "right_blocked")
 TEST_SYSTEM_PROMPT = """
 Generate only Python pytest code importing decide_next_move from generated.navigation_logic.
 Use requirements, plan and navigation source. Test all 64 combinations of six boolean
@@ -15,28 +13,10 @@ right_blocked. Assert allowed actions, obstacle avoidance, safe stop and goal pr
 Never compute expected values by calling the implementation. Include import and assert.
 Use pytest functions named test_* and plain assert statements, not unittest classes.
 Output only complete Python source code, without prose or markdown.
+
+The plan's priority table is exact, so the expected action for a state follows
+this order: """ + DECISION_ORDER + """.
 """
-
-
-def expected_action(state):
-    if state["goal_ahead"]:
-        preferred = "FORWARD" if not state["front_blocked"] else "LEFT"
-    elif state["goal_on_left"]:
-        preferred = "LEFT" if not state["left_blocked"] else "RIGHT"
-    elif state["goal_on_right"]:
-        preferred = "RIGHT" if not state["right_blocked"] else "FORWARD"
-    else:
-        return "STOP"
-    blocked = dict(zip(("FORWARD", "LEFT", "RIGHT"),
-                       (state["front_blocked"], state["left_blocked"], state["right_blocked"])))
-    for action in (preferred, "FORWARD", "LEFT", "RIGHT"):
-        if not blocked[action]:
-            return action
-    return "STOP"
-
-
-def scenarios():
-    return [dict(zip(KEYS, values)) for values in itertools.product((False, True), repeat=6)]
 
 
 def validate_test_output(code):
@@ -51,12 +31,22 @@ def validate_test_output(code):
             and any(isinstance(n, ast.FunctionDef) and n.name.startswith("test_") for n in ast.walk(tree)))
 
 
+def reference_test_source():
+    """Deterministic test file built from the plan's decision table.
+
+    ``run_simulation`` checks all 64 boolean states against this same table, so
+    the file is guaranteed to pass as soon as the navigation code matches the
+    plan.
+    """
+    rows = [(s, expected_action(s)) for s in scenarios()]
+    return ('import pytest\nfrom generated.navigation_logic import decide_next_move\n'
+            + '@pytest.mark.parametrize("state, expected", ' + repr(rows) + ')\n'
+            + 'def test_all_states(state, expected):\n    assert decide_next_move(state) == expected\n')
+
+
 def run_test_agent(requirements, plan, navigation_code, offline=False, max_attempts=3):
     if offline:
-        rows = [(s, expected_action(s)) for s in scenarios()]
-        code = ('import pytest\nfrom generated.navigation_logic import decide_next_move\n'
-                + '@pytest.mark.parametrize("state, expected", ' + repr(rows) + ')\n'
-                + 'def test_all_states(state, expected):\n    assert decide_next_move(state) == expected\n')
+        code = reference_test_source()
         if not validate_test_output(code):
             raise ValueError("Invalid offline test code")
         return code

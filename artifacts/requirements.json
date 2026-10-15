@@ -5,7 +5,7 @@
     "RIGHT",
     "STOP"
   ],
-  "goal": "navigate to the target",
+  "goal": "reach the target location",
   "safe_stop": true,
   "avoid_obstacles": true
 }

@@ -1,6 +1,11 @@
 {
-  "mode": "offline",
+  "mode": "online",
   "passed": true,
   "revision_attempts": 0,
+  "revisions_reverted": 0,
+  "best_artifact": "initial",
+  "plan_table_repairs": [
+    "initial"
+  ],
   "llm_revision_verified": false
 }

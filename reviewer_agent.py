@@ -36,4 +36,10 @@ def run_reviewer(report, offline=False):
     if not validate_reviewer_output(review):
         raise ValueError("Invalid simulation review")
     review["needs_revision"] = bool(failures)
+    # Measured failures always travel with the review, so a revision gets the
+    # exact states to fix even when the model writes a vague issue summary.
+    review["measured_failures"] = [
+        {"state": r.get("state"), "expected": r.get("expected"), "actual": r.get("actual")}
+        for r in failures[:8]
+    ]
     return review

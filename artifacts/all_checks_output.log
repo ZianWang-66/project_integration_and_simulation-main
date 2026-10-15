@@ -376,3 +376,384 @@ Results: 14 passed, 0 failed, 14 total
 ...............                                                          [100%]
 87 passed in 0.61s
 Pipeline passed
+========================================================================
+ANALYST AGENT - smoke test (Level 1)
+========================================================================
+[OK] brief.txt loaded (543 chars)
+[MODE] offline replay (no Ollama)
+[OK] agent produced output
+[OK] agent's own validation ACCEPTED the requirements
+[OK] artifact stored -> D:\SCSE\project_integration_and_simulation-main\artifacts\requirements.json
+------------------------------------------------------------------------
+Generated requirements.json:
+{
+  "allowed_actions": [
+    "FORWARD",
+    "LEFT",
+    "RIGHT",
+    "STOP"
+  ],
+  "goal": "navigate to the target",
+  "safe_stop": true,
+  "avoid_obstacles": true
+}
+------------------------------------------------------------------------
+ANALYST AGENT: PASSED
+========================================================================
+PLANNER AGENT - smoke test (Level 1)
+========================================================================
+[OK] requirements artifact loaded
+[MODE] offline replay (no Ollama)
+[OK] agent produced output
+[OK] agent's own validation ACCEPTED the plan
+[OK] plan is usable by the developer agent
+[OK] artifact stored -> D:\SCSE\project_integration_and_simulation-main\artifacts\plan.json
+------------------------------------------------------------------------
+Generated plan.json:
+{
+  "strategy": "Prioritize moving forward when the target is ahead and the path is clear. If blocked, check left, then right. Stop if no safe directions are available.",
+  "decisions": [
+    {
+      "condition": "Goal is ahead and path ahead is clear",
+      "action": "FORWARD"
+    },
+    {
+      "condition": "Goal is ahead but path ahead is blocked",
+      "action": "LEFT"
+    },
+    {
+      "condition": "Goal is to the left and path left is clear",
+      "action": "LEFT"
+    },
+    {
+      "condition": "Goal is to the left but path left is blocked",
+      "action": "RIGHT"
+    },
+    {
+      "condition": "Goal is to the right and path right is clear",
+      "action": "RIGHT"
+    },
+    {
+      "condition": "Goal is to the right but path right is blocked",
+      "action": "FORWARD"
+    },
+    {
+      "condition": "No safe direction available",
+      "action": "STOP"
+    }
+  ],
+  "stop_conditions": [
+    "No safe direction available"
+  ]
+}
+------------------------------------------------------------------------
+PLANNER AGENT: PASSED
+========================================================================
+DEVELOPER AGENT - smoke test (Level 1)
+========================================================================
+[OK] plan artifact loaded
+[MODE] offline replay (no Ollama)
+[OK] agent produced output
+[OK] agent's own validation ACCEPTED the generated code
+[OK] decide_next_move(state) signature is correct
+[OK] no other helper function is required to be called by outside code
+[OK] artifact stored -> D:\SCSE\project_integration_and_simulation-main\generated\navigation_logic.py
+------------------------------------------------------------------------
+Generated navigation_logic.py (preview):
+"""Fixture: a known-good Developer Agent output, used for offline replay.
+
+This is the exact artifact the agent produced in the previous project phase,
+kept under tests/fixtures/ so the offline smoke test has a stable input that
+is separate from the runtime artifact generated/navigation_logic.py.
+"""
+
+# Allowed actions the robot may perform.
+ALLOWED_ACTIONS = ("FORWARD", "LEFT", "RIGHT", "STOP")
+
+_GOAL_AHEAD = "AHEAD"
+_GOAL_LEFT = "LEFT"
+_GOAL_RIGHT = "RIGHT"
+
+
+def _is_clear(direction, blocked):
+    return not blocked
+
+
+def _goal_direction(state):
+... (46 more lines)
+------------------------------------------------------------------------
+DEVELOPER AGENT: PASSED
+[PASS] goal ahead, path clear                                       (action='FORWARD' expected='FORWARD')
+[PASS] goal ahead, front blocked, left clear                        (action='LEFT' expected='LEFT')
+[PASS] goal ahead, front + left blocked, right clear                (action='RIGHT' expected='RIGHT')
+[PASS] goal ahead, all sides blocked -> must STOP                   (action='STOP' expected='STOP')
+[PASS] goal left, path clear                                        (action='LEFT' expected='LEFT')
+[PASS] goal left, left blocked, right clear                         (action='RIGHT' expected='RIGHT')
+[PASS] goal left, left + right blocked, front clear                 (action='FORWARD' expected='FORWARD')
+[PASS] goal left, all blocked -> STOP                               (action='STOP' expected='STOP')
+[PASS] goal right, path clear                                       (action='RIGHT' expected='RIGHT')
+[PASS] goal right, right blocked, front clear                       (action='FORWARD' expected='FORWARD')
+[PASS] goal right, right + front blocked, left clear                (action='LEFT' expected='LEFT')
+[PASS] goal right, all blocked -> STOP                              (action='STOP' expected='STOP')
+[PASS] no goal known, all clear -> safe STOP (no direction to pursue) (action='STOP' expected='STOP')
+[PASS] no goal known, all blocked -> STOP                           (action='STOP' expected='STOP')
+------------------------------------------------------------------------
+Results: 14 passed, 0 failed, 14 total
+........................................................................ [ 82%]
+...............                                                          [100%]
+87 passed in 0.71s
+Pipeline passed
+========================================================================
+ANALYST AGENT - smoke test (Level 1)
+========================================================================
+[OK] brief.txt loaded (543 chars)
+[MODE] offline replay (no Ollama)
+[OK] agent produced output
+[OK] agent's own validation ACCEPTED the requirements
+[OK] artifact stored -> D:\SCSE\project_integration_and_simulation-main\artifacts\requirements.json
+------------------------------------------------------------------------
+Generated requirements.json:
+{
+  "allowed_actions": [
+    "FORWARD",
+    "LEFT",
+    "RIGHT",
+    "STOP"
+  ],
+  "goal": "navigate to the target",
+  "safe_stop": true,
+  "avoid_obstacles": true
+}
+------------------------------------------------------------------------
+ANALYST AGENT: PASSED
+========================================================================
+PLANNER AGENT - smoke test (Level 1)
+========================================================================
+[OK] requirements artifact loaded
+[MODE] offline replay (no Ollama)
+[OK] agent produced output
+[OK] agent's own validation ACCEPTED the plan
+[OK] plan is usable by the developer agent
+[OK] artifact stored -> D:\SCSE\project_integration_and_simulation-main\artifacts\plan.json
+------------------------------------------------------------------------
+Generated plan.json:
+{
+  "strategy": "Prioritize moving forward when the target is ahead and the path is clear. If blocked, check left, then right. Stop if no safe directions are available.",
+  "decisions": [
+    {
+      "condition": "Goal is ahead and path ahead is clear",
+      "action": "FORWARD"
+    },
+    {
+      "condition": "Goal is ahead but path ahead is blocked",
+      "action": "LEFT"
+    },
+    {
+      "condition": "Goal is to the left and path left is clear",
+      "action": "LEFT"
+    },
+    {
+      "condition": "Goal is to the left but path left is blocked",
+      "action": "RIGHT"
+    },
+    {
+      "condition": "Goal is to the right and path right is clear",
+      "action": "RIGHT"
+    },
+    {
+      "condition": "Goal is to the right but path right is blocked",
+      "action": "FORWARD"
+    },
+    {
+      "condition": "No safe direction available",
+      "action": "STOP"
+    }
+  ],
+  "stop_conditions": [
+    "No safe direction available"
+  ]
+}
+------------------------------------------------------------------------
+PLANNER AGENT: PASSED
+========================================================================
+DEVELOPER AGENT - smoke test (Level 1)
+========================================================================
+[OK] plan artifact loaded
+[MODE] offline replay (no Ollama)
+[OK] agent produced output
+[OK] agent's own validation ACCEPTED the generated code
+[OK] decide_next_move(state) signature is correct
+[OK] no other helper function is required to be called by outside code
+[OK] artifact stored -> D:\SCSE\project_integration_and_simulation-main\generated\navigation_logic.py
+------------------------------------------------------------------------
+Generated navigation_logic.py (preview):
+"""Fixture: a known-good Developer Agent output, used for offline replay.
+
+This is the exact artifact the agent produced in the previous project phase,
+kept under tests/fixtures/ so the offline smoke test has a stable input that
+is separate from the runtime artifact generated/navigation_logic.py.
+"""
+
+# Allowed actions the robot may perform.
+ALLOWED_ACTIONS = ("FORWARD", "LEFT", "RIGHT", "STOP")
+
+_GOAL_AHEAD = "AHEAD"
+_GOAL_LEFT = "LEFT"
+_GOAL_RIGHT = "RIGHT"
+
+
+def _is_clear(direction, blocked):
+    return not blocked
+
+
+def _goal_direction(state):
+... (46 more lines)
+------------------------------------------------------------------------
+DEVELOPER AGENT: PASSED
+[PASS] goal ahead, path clear                                       (action='FORWARD' expected='FORWARD')
+[PASS] goal ahead, front blocked, left clear                        (action='LEFT' expected='LEFT')
+[PASS] goal ahead, front + left blocked, right clear                (action='RIGHT' expected='RIGHT')
+[PASS] goal ahead, all sides blocked -> must STOP                   (action='STOP' expected='STOP')
+[PASS] goal left, path clear                                        (action='LEFT' expected='LEFT')
+[PASS] goal left, left blocked, right clear                         (action='RIGHT' expected='RIGHT')
+[PASS] goal left, left + right blocked, front clear                 (action='FORWARD' expected='FORWARD')
+[PASS] goal left, all blocked -> STOP                               (action='STOP' expected='STOP')
+[PASS] goal right, path clear                                       (action='RIGHT' expected='RIGHT')
+[PASS] goal right, right blocked, front clear                       (action='FORWARD' expected='FORWARD')
+[PASS] goal right, right + front blocked, left clear                (action='LEFT' expected='LEFT')
+[PASS] goal right, all blocked -> STOP                              (action='STOP' expected='STOP')
+[PASS] no goal known, all clear -> safe STOP (no direction to pursue) (action='STOP' expected='STOP')
+[PASS] no goal known, all blocked -> STOP                           (action='STOP' expected='STOP')
+------------------------------------------------------------------------
+Results: 14 passed, 0 failed, 14 total
+........................................                                 [100%]
+40 passed in 0.81s
+Pipeline passed
+Pipeline passed
+========================================================================
+ANALYST AGENT - smoke test (Level 1)
+========================================================================
+[OK] brief.txt loaded (543 chars)
+[MODE] offline replay (no Ollama)
+[OK] agent produced output
+[OK] agent's own validation ACCEPTED the requirements
+[OK] artifact stored -> D:\SCSE\project_integration_and_simulation-main\artifacts\requirements.json
+------------------------------------------------------------------------
+Generated requirements.json:
+{
+  "allowed_actions": [
+    "FORWARD",
+    "LEFT",
+    "RIGHT",
+    "STOP"
+  ],
+  "goal": "navigate to the target",
+  "safe_stop": true,
+  "avoid_obstacles": true
+}
+------------------------------------------------------------------------
+ANALYST AGENT: PASSED
+========================================================================
+PLANNER AGENT - smoke test (Level 1)
+========================================================================
+[OK] requirements artifact loaded
+[MODE] offline replay (no Ollama)
+[OK] agent produced output
+[OK] agent's own validation ACCEPTED the plan
+[OK] plan is usable by the developer agent
+[OK] artifact stored -> D:\SCSE\project_integration_and_simulation-main\artifacts\plan.json
+------------------------------------------------------------------------
+Generated plan.json:
+{
+  "strategy": "Prioritize moving forward when the target is ahead and the path is clear. If blocked, check left, then right. Stop if no safe directions are available.",
+  "decisions": [
+    {
+      "condition": "Goal is ahead and path ahead is clear",
+      "action": "FORWARD"
+    },
+    {
+      "condition": "Goal is ahead but path ahead is blocked",
+      "action": "LEFT"
+    },
+    {
+      "condition": "Goal is to the left and path left is clear",
+      "action": "LEFT"
+    },
+    {
+      "condition": "Goal is to the left but path left is blocked",
+      "action": "RIGHT"
+    },
+    {
+      "condition": "Goal is to the right and path right is clear",
+      "action": "RIGHT"
+    },
+    {
+      "condition": "Goal is to the right but path right is blocked",
+      "action": "FORWARD"
+    },
+    {
+      "condition": "No safe direction available",
+      "action": "STOP"
+    }
+  ],
+  "stop_conditions": [
+    "No safe direction available"
+  ]
+}
+------------------------------------------------------------------------
+PLANNER AGENT: PASSED
+========================================================================
+DEVELOPER AGENT - smoke test (Level 1)
+========================================================================
+[OK] plan artifact loaded
+[MODE] offline replay (no Ollama)
+[OK] agent produced output
+[OK] agent's own validation ACCEPTED the generated code
+[OK] decide_next_move(state) signature is correct
+[OK] no other helper function is required to be called by outside code
+[OK] artifact stored -> D:\SCSE\project_integration_and_simulation-main\generated\navigation_logic.py
+------------------------------------------------------------------------
+Generated navigation_logic.py (preview):
+"""Fixture: a known-good Developer Agent output, used for offline replay.
+
+This is the exact artifact the agent produced in the previous project phase,
+kept under tests/fixtures/ so the offline smoke test has a stable input that
+is separate from the runtime artifact generated/navigation_logic.py.
+"""
+
+# Allowed actions the robot may perform.
+ALLOWED_ACTIONS = ("FORWARD", "LEFT", "RIGHT", "STOP")
+
+_GOAL_AHEAD = "AHEAD"
+_GOAL_LEFT = "LEFT"
+_GOAL_RIGHT = "RIGHT"
+
+
+def _is_clear(direction, blocked):
+    return not blocked
+
+
+def _goal_direction(state):
+... (46 more lines)
+------------------------------------------------------------------------
+DEVELOPER AGENT: PASSED
+[PASS] goal ahead, path clear                                       (action='FORWARD' expected='FORWARD')
+[PASS] goal ahead, front blocked, left clear                        (action='LEFT' expected='LEFT')
+[PASS] goal ahead, front + left blocked, right clear                (action='RIGHT' expected='RIGHT')
+[PASS] goal ahead, all sides blocked -> must STOP                   (action='STOP' expected='STOP')
+[PASS] goal left, path clear                                        (action='LEFT' expected='LEFT')
+[PASS] goal left, left blocked, right clear                         (action='RIGHT' expected='RIGHT')
+[PASS] goal left, left + right blocked, front clear                 (action='FORWARD' expected='FORWARD')
+[PASS] goal left, all blocked -> STOP                               (action='STOP' expected='STOP')
+[PASS] goal right, path clear                                       (action='RIGHT' expected='RIGHT')
+[PASS] goal right, right blocked, front clear                       (action='FORWARD' expected='FORWARD')
+[PASS] goal right, right + front blocked, left clear                (action='LEFT' expected='LEFT')
+[PASS] goal right, all blocked -> STOP                              (action='STOP' expected='STOP')
+[PASS] no goal known, all clear -> safe STOP (no direction to pursue) (action='STOP' expected='STOP')
+[PASS] no goal known, all blocked -> STOP                           (action='STOP' expected='STOP')
+------------------------------------------------------------------------
+Results: 14 passed, 0 failed, 14 total
+........................................                                 [100%]
+40 passed in 0.86s
+Pipeline passed
+Pipeline passed

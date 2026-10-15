@@ -40,7 +40,9 @@ python main.py --force-revision
 
 The pipeline runs the Analyst, Planner, Developer, Test Agent, simulation, simulation reviewer, IR-SIM benchmark, and benchmark reviewer. A revision is saved as `generated/navigation_logic_revised.py` and applied to `generated/navigation_logic.py` before testing again. `--force-revision` requests one revision even when the initial run passes.
 
-The default limit is one revision. Use `--max-revisions 3` for up to three revisions. A failed pipeline returns exit code 1. Ollama requests disable thinking and retry HTTP 429 or 503 up to twice. Reviewers request structured JSON, validate the response, and retry invalid responses up to three attempts. Invalid raw responses are saved under `artifacts/`. The Test Agent retries invalid Python output up to three attempts and saves its latest raw response to `artifacts/test_agent_raw_output.txt`.
+Every IR-SIM world drives in its own window (robot, obstacles, goal, trajectory) and holds the final frame for three seconds, so `python main.py` doubles as the demo: it prints each world as it starts and reports goal, steps, collisions and clearance when that world finishes. Add `--headless` to run the four worlds without windows (faster, intended for batch verification).
+
+The default allows up to three revisions; `--max-revisions` changes the limit. A failed pipeline returns exit code 1. Ollama requests disable thinking and retry HTTP 429 or 503 up to twice. Reviewers request structured JSON, validate the response, and retry invalid responses up to three attempts. Invalid raw responses are saved under `artifacts/`. The Test Agent retries invalid Python output up to three attempts and saves its latest raw response to `artifacts/test_agent_raw_output.txt`.
 
 ## Offline Run
 
@@ -67,13 +69,35 @@ Results are saved in `artifacts/`, including `simulation_report.json`, `irsim_be
 
 An efficient IR-SIM run reaches the goal within 200 steps. The maximum is 300 steps. The supplied `collision_or_done` field indicates a terminal condition and does not distinguish every possible cause.
 
+## Simulation Safety
+
+`test_irsim_with_agent.py` is the rig around the generated logic. It measures the six flags against the real obstacle polygons (buffered by the robot radius plus a 0.25 m margin) and the arena boundary, and it commands the robot through a safety supervisor:
+
+- LEFT and RIGHT rotate in place, so a dodging manoeuvre cannot translate the robot into anything.
+- FORWARD is only issued when a corridor check proves the next step stays clear of every obstacle and of the walls.
+- While the front corridor is blocked the robot commits to one turning side instead of oscillating, and only resumes goal seeking once that corridor is clear again. A stall watchdog forces a decisive rotation when a run stops making progress.
+
+Every report therefore carries `collisions`, `safety_overrides`, `escape_maneuvers` and `min_clearance` next to the original fields. `collision_or_done` keeps its meaning: the run ended in a stop or arrival rather than a clean goal arrival.
+
+`matplotlib_compat.py` guards a flaky dependency: on CPython 3.14 the docstring introspection matplotlib runs while building its class hierarchy can raise `RuntimeError: internal error in regular expression engine`, which used to abort IR-SIM before the robot moved. The runner imports the guard before IR-SIM, and `benchmark_irsim.py` retries a world up to three times in a fresh interpreter.
+
+## Pipeline Verdicts
+
+`run_simulation` checks all 64 boolean states against the plan's decision table and is the deterministic reference. When the Test Agent's file contradicts that table it is regenerated, and if it keeps disagreeing it is replaced by the deterministic test file built from the plan, so the pipeline does not revise correct code because a generated test was wrong.
+
+A revision is kept only when it scores at least as well as the current best round (safety, goal completion, efficiency, pytest). A revision that scores lower is reverted, recorded as `revisions_reverted` in `artifacts/pipeline_status.json`, and the verified artifact stays in `generated/navigation_logic.py`.
+
+The Developer Agent checks its own output against the plan's decision table and retries with the wrong states explained. If the code still does not implement the table for every one of the 64 boolean states, the pipeline saves the model output as `artifacts/<round>_rejected_navigation.py` and compiles the plan's table itself (`navigation_spec.plan_table_source()`), recording the round in `plan_table_repairs`. The artifact under test therefore always implements the plan.
+
+`generated/` holds run artifacts, so `python -m pytest -q` collects `tests/` only. The pipeline runs `generated/test_navigation.py` explicitly and saves the output to `artifacts/<round>_pytest.txt`.
+
 ## Complete Verification
 
 ```bash
 python run_all_checks.py
 ```
 
-This runs the original agent fixture checks, original navigation checks, full pytest suite, offline pipeline with four real IR-SIM worlds, and finally the online Qwen pipeline with a forced revision and up to three revision attempts. It stops on any failure and saves `artifacts/all_checks_report.json` and `artifacts/all_checks_output.log`.
+This runs the original agent fixture checks, original navigation checks, full pytest suite, offline pipeline with four real IR-SIM worlds, and finally the online Qwen pipeline with a forced revision and up to three revision attempts. The worlds show their windows exactly as in a normal run; add `--headless` for a windowless verification. It stops on any failure and saves `artifacts/all_checks_report.json` and `artifacts/all_checks_output.log`.
 
 ```bash
 python run_all_checks.py --offline
